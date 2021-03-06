@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portofolioku</title>
+   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+   <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon">
+   <style type="text/css">
+      body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Segoe UI', poppins, Tahoma, 'Geneva', Verdana, sans-serif;
+         scroll-behavior: smooth;
+      }
+
+      * {
+         box-sizing: border-box;
+      }
+
+      ul {
+         list-style: none;
+      }
+
+      li {
+         text-decoration: none;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      #main {
+         width: 100%;
+         height: 675px;
+         position: relative;
+      }
+
+      nav {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         box-shadow: 5px 15px 25px rgba(24, 24, 24, 0.03);
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         z-index: 1;
+         background-color: rgb(253, 254, 255);
+         padding-right: 40px;
+      }
+
+      .logo img {
+         width: 100%;
+         
+
+      }
+
+      nav ul {
+         display: flex;
+      }
+
+      nav ul li a {
+         height: 40px;
+         line-height: 40px;
+         margin: 5px;
+         padding: 0px 15px;
+         display: flex;
+         font-size: 0.8rem;
+         text-transform: uppercase;
+         font-weight: 500;
+         color: #585b5b;
+         letter-spacing: 1px;
+      }
+
+      nav ul li a:hover {
+         background-color: rgb(75, 206, 250);
+         color: #ffffff;
+         /* box-shadow: 5px 10px 15px rgba(64, 160, 198, 0.3); */
+         transition: all ease 0.2s;
+         border-radius: 4px;
+      }
+
+      .model img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+
+      .model {
+         width: 500px;
+         height: 500px;
+      }
+
+      .content {
+         width: 95%;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         position: absolute;
+         left: 48%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+      }
+
+      
+
+      .main-text h1 {
+         font-size: 2.8rem;
+         color: #1c3548;
+         margin: 0px 0px 8px 0px;
+         line-height: 60px;
+      }
+
+      .main-text p {
+         color: #747474;
+         padding-bottom: 12px;
+      }
+
+      .main-text a {
+         width: 100%;
+         position: relative;
+
+      }
+
+      .btn-portofolio {
+         width: 100%;
+         padding: 10px 10px 10px 10px;
+         margin-right: 10px;
+         margin: 10px 10px 0px 0px;
+         justify-content: center;
+         color: #ffffff;
+         font-size: 1.15rem;
+         align-items: center;
+         background-color: rgb(75, 206, 250);
+         border-radius: 5px;
+         position: absolute;
+      }
+
+      .btn-portofolio:hover {
+         background-color: rgb(49, 172, 212);
+         transition: all ease 0.2s;
+      }
+
+      #skill {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         width: 90%;
+         margin: auto auto 50px auto;
+      }
+
+      .skill-text {
+         width: 400px;
+      }
+
+      .skill-img {
+         width: 500px;
+         height: 500px;
+      }
+
+      .skill-img img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+
+      .skill-heading span {
+         color: #3da4b4;
+         font-weight: 500;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         font-size: 1.5rem;
+      }
+
+      .skill-heading h2 {
+         color: #1c3548;
+         font-size: 2.5rem;
+         margin: 0px;
+         font-family: poppins;
+         letter-spacing: 1px;
+      }
+
+      .s-box-container {
+         margin-top: 30px;
+      }
+
+      .skill-box {
+         display: flex;
+         margin: 7px 0px;
+      }
+
+      .s-box-text strong {
+         color: #1c3548;
+         font-size: 1.25rem;
+         font-weight: 600;
+      }
+
+      .s-box-text p {
+         color: #747474;
+         font-size: 1rem;
+         margin: 2px 0px 10px;
+      }
+
+      .btn-skill {
+         width: 50px;
+         height: 50px;
+         color: #ffffff;
+         font-size: 0.95rem;
+         margin: 0px 7px;
+         padding: 3px 8px 3px 8px;
+         background-color: rgb(60, 185, 226);
+         border-radius: 50px;
+      }
+
+      .btn-skill:hover {
+         background: none;
+         color: rgb(60, 185, 226);
+         border: 2px solid rgb(60, 185, 226);
+         font-weight: 500;
+         border-radius: 50px;
+      }
+
+      #profil {
+         width: 100%;
+         position: center;
+         justify-content: center;
+         align-items: center;
+         margin: 0px 0px 50px 0px;
+         flex-direction: column;
+      }
+
+      .profil-heading {
+         color: #1c3548;
+         font-size: 1.5rem;
+         font-family: poppins;
+         font-weight: 600;
+         letter-spacing: 1px;
+      }
+      .profil-headings {
+         color: #1c3548;
+         font-size: 1.3rem;
+         font-family: poppins;
+         font-weight: 600;
+         letter-spacing: 1px;
+      }
+
+      .profil-text p {
+         width: 100%;
+         color: #575757;
+         font-size: 1rem;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         text-align: center;
+         font-weight: 375;
+      }
+
+      .profil-img img {
+         width: 100%;
+         border-radius: 50%;
+         margin-bottom: 10px;
+      }
+
+      .profil-box-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         margin: 20px 0px;
+         width: 100%;
+      }
+
+      .profil-box {
+         width: 90%;
+         height: 600px;
+         
+         background-color: rgb(255, 255, 255);
+        
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         padding-bottom: 50px;
+         padding-top: 40px;
+         
+         background-image: url("images/bg.png");
+         background-size: 550px;
+      }
+
+      .profil-boxx {
+         width: 85%;
+         height: 530px;
+        
+         background-color: rgb(255, 255, 255);
+        
+         display: flex;
+        padding-top: 45px;
+         align-items: center;
+         flex-direction: column;
+         
+       
+         background-size: 550px;
+      }
+
+      #contact {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 40px 0px;
+      }
+
+      #contact h3 {
+         color: #1c3548;
+         font-size: 3rem;
+         margin: 0px;
+         font-weight: 400;
+         letter-spacing: 1px;
+      }
+
+      .contact-list {
+         width: 400px;
+         height: 50px;
+         display: flex;
+         justify-content: center;
+         color: #1c3548;
+         font-size: 1.2rem;
+         position: relative;
+         align-content: center;
+         right: 15px;
+         
+      }
+
+      .contact-list ul li{
+         padding-bottom: 7px;
+      }
+
+      .contact-list ul li a{
+         padding-bottom: 10px;
+         height: 40px;
+         line-height: 43px;                
+         display: flex;
+         font-size: 1rem;
+         /*text-transform: uppercase;*/
+         font-weight: 500;
+         color: #585b5b;
+         letter-spacing: 1px;
+      }
+
+       .contact-list ul li a:hover {
+         
+         color: rgb(75, 206, 250);
+       /*   box-shadow: 5px 10px 15px rgba(64, 160, 198, 0.3); */
+         transition: all ease 0.2s;
+         border-radius: 4px;
+      }
+      .contact-list ul li img{
+         width: 35px;
+         height: 35px;
+         
+         margin-top: 8px;
+         margin-right: 15px;
+      }
+   </style>
+</head>
+
+<body>
+   <section id="main">
+      <nav>
+         <!-- Logo -->
+         <a href="index.html" class="logo">
+            <img src="img/logo/logos.png" alt="Logo">
+         </a>
+         <ul class="menu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <!-- <li><a href="#">Project</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+         <!-- <a href="#" class="hello">Hello world</a> -->
+      </nav>
+      <!-- content -->
+      <div class="content">
+         <div class="model">
+            <img src="img/model2.png" alt="">
+         </div>
+         <div class="main-text">
+            <h1>Hai ! Namaku Huda</h1>
+            <p>Saya adalah Software Engineer Junior yang berfokus pada 
+               Pengembangan Software Engineering,<br>sebagai Software Engineer, saya juga memiliki minat pada bidang desain grafis dan editing
+            </p>
+
+            <a href="img/Hudaputrasantosa-freshgraduate2020.pdf" class="btn-portofolio">Download CV</a>
+            <!-- <a href="#" class="btn-portofolio">Hire Me</a> -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Profil -->
+   <section id="profil">
+      <div class="profil-box-container">
+         <div class="profil-box">
+            <div class="profil-headings">
+               <h1>My Profil</h1>
+            </div>
+            <div class="profil-img">
+               <img src="img/profil3.jpg" alt="">
+            </div>
+            <div class="profil-text">
+               <p><strong style="font-size: 1.4rem">Huda Putra Santosa</strong> <br>
+                  <i style="font-size: 1.1rem">Software Engineer Junior</i> <br><br> </p>
+                  <p style="font-size: 1rem;">
+                  Pemalang, 31 januari 2002 <br>
+                  Jalan Jendral Sudirman, Dk. Bleder RT/RW 006/004 <br>
+                  Ds. Tegalsari, Kecamatan Kandeman, Kabupaten Batang <br>
+                  Provinsi Jawa Tengah
+                  </p>
+               
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Skill -->
+   <section id="skill">
+      <div class="skill-text">
+         <!-- heading -->
+         <div class="skill-heading">
+            <!-- <span>My skill</span> -->
+            <h2>My Skill</h2>
+         </div>
+         <div class="s-box-container">
+            <div class="skill-box">
+               <div class="s-box-text">
+                  <strong>PHP Native</strong><a class="btn-skill">Expert</a>
+                  <p>Kemampuan Memahami Bahasa Pemrograman PHP</p>
+               </div>
+            </div>
+            <div class="skill-box">
+               <div class="s-box-text">
+                  <strong>Laravel</strong><a class="btn-skill">Good</a>
+                  <p>Menguasai Framework PHP Laravel untuk memudahkan Pekerjaan</p>
+               </div>
+            </div>
+            <div class="skill-box">
+               <div class="s-box-text">
+                  <strong>Codeigniter</strong><a class="btn-skill">Good</a>
+                  <p>Menguasai Framework PHP Codeigniter untuk memudahkan Pekerjaan</p>
+               </div>
+            </div>
+            <div class="skill-box">
+               <div class="s-box-text">
+                  <strong>HTML, CSS and Javascript</strong><a class="btn-skill">Good</a>
+                  <p>Memahami 3 elemen untuk Membangun Sebuah Website</p>
+               </div>
+            </div>
+            <div class="skill-box">
+               <div class="s-box-text">
+                  <strong>Database Management</strong><a class="btn-skill">Good</a>
+                  <p>Memahami Dalam Memanagement Database untuk Keperluan Website</p>
+               </div>
+            </div>
+            <div class="skill-box">
+               <div class="s-box-text">
+                  <strong>Java</strong><a class="btn-skill">Good</a>
+                  <p>Memahami Bahasa Pemrograman Java, untuk memaksimalkan algoritma dan dapat membangun Desktop Application dan Android Application</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- image -->
+      <div class="skill-img">
+         <img src="img/model3.png" alt="">
+      </div>
+   </section>
+   <!-- Section contact -->
+     <div id="contact">
+      <div class="profil-box-container">
+         <div class="profil-boxx">
+            <div class="profil-headings">
+               <h1>My Contact</h1>
+            </div>
+            
+               <div class="contact-list">
+              <ul>
+                  <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCBkLfmhSstmqdFTvCrcQsZbSQJKnZwSnjswmPwQWGlsCMwCShfvbDzdxdZqrqztHGdwCL" target="_blank"><img src="img/gmail.png">hudaputrasantosa@gmail.com</a></li>
+
+                 <li><a href="https://github.com/hudaputrasantosa" target="_blank"><img src="img/github.png" target="_blank">hudaputrasantosa</a></li>
+
+                 <li><a href="https://hudaputrasantosa.medium.com/"><img src="img/medium.png">Hudaputrasantosa</a></li>
+                 <li><a href="https://www.instagram.com/hudazackyvee_6661/" target="_blank" ><img src="img/instagram2.png">hudazackyvee_6661</a></li>
+
+                 <li><a href="https://web.facebook.com/profile.php?id=100031071102567" target="_blank" ><img src="img/facebook2.png">Huda Putra Santosa</a></li>
+
+                 <li><a href="https://twitter.com/hudaputras" target="_blank"><img src="img/twitter.png">hudaputras</a></li>
+
+                 <!-- <li><a href=""><img src="img/linkedin.png">Huda Putra Santosa</a></li>
+              </ul> -->
+              </div>
+            
+         </div>
+      </div>
+      </div>
+   </section>
+</body>
+
+</html>
