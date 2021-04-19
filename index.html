@@ -3,15 +3,28 @@
 
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+">
    <title>Portofolioku</title>
    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon">
    <style type="text/css">
+   @media only screen and (min-device-width : 320px) and (max-device-width : 980px) {
+      .model img {
+         display: none;
+      }
+      .skill-img {
+         display: none;
+      }
+      .logo img {
+        display: none;
+      }
+
+   }
       body {
          margin: 0px;
          padding: 0px;
-         font-family: 'Segoe UI', poppins, Tahoma, 'Geneva', Verdana, sans-serif;
+         font-family: 'Segoe UI', 'poppins' , Tahoma, 'Geneva', Verdana, sans-serif;
          scroll-behavior: smooth;
       }
 
@@ -33,15 +46,17 @@
 
       #main {
          width: 100%;
-         height: 675px;
+         height: 650px;
          position: relative;
+         margin: auto;
+         bottom: -30px;
       }
 
       nav {
          display: flex;
          justify-content: space-around;
          align-items: center;
-         box-shadow: 5px 15px 25px rgba(24, 24, 24, 0.03);
+         box-shadow: 5px 18px 28px rgba(24, 24, 24, 0.03);
          position: fixed;
          left: 0;
          top: 0;
@@ -53,8 +68,6 @@
 
       .logo img {
          width: 100%;
-         
-
       }
 
       nav ul {
@@ -75,11 +88,10 @@
       }
 
       nav ul li a:hover {
-         background-color: rgb(75, 206, 250);
+         background-color: rgb(116, 219, 253);
          color: #ffffff;
-         /* box-shadow: 5px 10px 15px rgba(64, 160, 198, 0.3); */
          transition: all ease 0.2s;
-         border-radius: 4px;
+         border-radius: 5px;
       }
 
       .model img {
@@ -94,28 +106,26 @@
       }
 
       .content {
-         width: 95%;
+         width: 90%;
          display: flex;
          justify-content: space-around;
-         align-items: center;
-         position: absolute;
-         left: 48%;
-         top: 50%;
+         align-items: center;    
+         position: relative;
+         left: 50%;
+         top: 48%;
          transform: translate(-50%, -50%);
       }
-
-      
 
       .main-text h1 {
          font-size: 2.8rem;
          color: #1c3548;
-         margin: 0px 0px 8px 0px;
-         line-height: 60px;
+         line-height: 50px;
       }
 
       .main-text p {
-         color: #747474;
+         color: #636363;
          padding-bottom: 12px;
+         font-size: 1.1rem;
       }
 
       .main-text a {
@@ -143,12 +153,87 @@
          transition: all ease 0.2s;
       }
 
+      #profil {
+         width: 100%;
+         position: center;
+         justify-content: center;
+         align-items: center;
+         margin: 0px 0px 50px 0px;
+         flex-direction: column;
+      }
+
+      .profil-heading {
+         color: #1c3548;
+         font-size: 2rem;
+         font-family: poppins;
+         font-weight: 600;
+         letter-spacing: 1px;
+      }
+     
+
+      .profil-text p {
+         width: 100%;
+         color:  #1c3548;     
+         align-items: center;
+         font-family: roboto;
+         justify-content: center;
+         position: relative;
+         text-align: center;
+         font-weight: 390;
+         line-height: 25px;
+      }
+
+      .profil-img img {
+         width: 400px;
+         border-radius: 50%;
+         margin-bottom: 10px;
+         margin-left: 50;
+      }
+
+      .profil-box-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         margin: 20px 0px;
+         width: 100%;
+      }
+
+      .profil-box {
+         width: 90%;
+         height: 600px;          
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         padding-bottom: 50px;
+         padding-top: 40px;
+         background-size: 550px;
+      }
+
+      .profil-boxx {
+         width: 85%;
+         height: 530px;
+        
+         background-color: rgb(255, 255, 255);
+        
+         display: flex;
+        padding-top: 45px;
+         align-items: center;
+         flex-direction: column;
+         
+       
+         background-size: 550px;
+      }
+
       #skill {
          display: flex;
          justify-content: space-around;
          align-items: center;
          width: 90%;
          margin: auto auto 50px auto;
+         position: relative;
+         padding-top: 20px;
       }
 
       .skill-text {
@@ -174,16 +259,15 @@
          font-size: 1.5rem;
       }
 
-      .skill-heading h2 {
+      .skill-heading h1 {
          color: #1c3548;
          font-size: 2.5rem;
-         margin: 0px;
          font-family: poppins;
          letter-spacing: 1px;
       }
 
       .s-box-container {
-         margin-top: 30px;
+         margin-top: 20px;
       }
 
       .skill-box {
@@ -217,91 +301,9 @@
       .btn-skill:hover {
          background: none;
          color: rgb(60, 185, 226);
-         border: 2px solid rgb(60, 185, 226);
+         border: 1px solid rgb(60, 185, 226);
          font-weight: 500;
          border-radius: 50px;
-      }
-
-      #profil {
-         width: 100%;
-         position: center;
-         justify-content: center;
-         align-items: center;
-         margin: 0px 0px 50px 0px;
-         flex-direction: column;
-      }
-
-      .profil-heading {
-         color: #1c3548;
-         font-size: 1.5rem;
-         font-family: poppins;
-         font-weight: 600;
-         letter-spacing: 1px;
-      }
-      .profil-headings {
-         color: #1c3548;
-         font-size: 1.3rem;
-         font-family: poppins;
-         font-weight: 600;
-         letter-spacing: 1px;
-      }
-
-      .profil-text p {
-         width: 100%;
-         color: #575757;
-         font-size: 1rem;
-         align-items: center;
-         justify-content: center;
-         position: relative;
-         text-align: center;
-         font-weight: 375;
-      }
-
-      .profil-img img {
-         width: 100%;
-         border-radius: 50%;
-         margin-bottom: 10px;
-      }
-
-      .profil-box-container {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-wrap: wrap;
-         margin: 20px 0px;
-         width: 100%;
-      }
-
-      .profil-box {
-         width: 90%;
-         height: 600px;
-         
-         background-color: rgb(255, 255, 255);
-        
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
-         padding-bottom: 50px;
-         padding-top: 40px;
-         
-         background-image: url("img/bg.png");
-         background-size: 550px;
-      }
-
-      .profil-boxx {
-         width: 85%;
-         height: 530px;
-        
-         background-color: rgb(255, 255, 255);
-        
-         display: flex;
-        padding-top: 45px;
-         align-items: center;
-         flex-direction: column;
-         
-       
-         background-size: 550px;
       }
 
       #contact {
@@ -319,7 +321,13 @@
          font-weight: 400;
          letter-spacing: 1px;
       }
-
+      .contact-headings {
+         color: #1c3548;
+         font-size: 2rem;
+         font-family: poppins;
+         font-weight: 600;
+         letter-spacing: 1px;
+      }
       .contact-list {
          width: 400px;
          height: 50px;
@@ -367,7 +375,7 @@
 </head>
 
 <body>
-   <section id="main">
+   
       <nav>
          <!-- Logo -->
          <a href="index.html" class="logo">
@@ -382,6 +390,7 @@
          </ul>
          <!-- <a href="#" class="hello">Hello world</a> -->
       </nav>
+      <section id="main">
       <!-- content -->
       <div class="content">
          <div class="model">
@@ -390,7 +399,7 @@
          <div class="main-text">
             <h1>Hai ! Namaku Huda</h1>
             <p>Saya adalah Software Engineer Junior yang berfokus pada 
-               Pengembangan Software Engineering,<br>sebagai Software Engineer, saya juga memiliki minat pada bidang desain grafis dan editing
+               Pengembangan<br>Software Engineering Sebagai Software Engineer, saya juga memiliki minat<br>pada bidang desain grafis dan video editing
             </p>
 
             <a href="img/Hudaputrasantosa-freshgraduate2020.pdf" class="btn-portofolio">Download CV</a>
@@ -403,22 +412,21 @@
    <section id="profil">
       <div class="profil-box-container">
          <div class="profil-box">
-            <div class="profil-headings">
+            <div class="profil-heading">
                <h1>My Profil</h1>
             </div>
             <div class="profil-img">
-               <img src="img/profil3.jpg" alt="">
+               <img src="img/model2.png"  alt="">
             </div>
             <div class="profil-text">
-               <p><strong style="font-size: 1.4rem">Huda Putra Santosa</strong> <br>
-                  <i style="font-size: 1.1rem">Software Engineer Junior</i> <br><br> </p>
-                  <p style="font-size: 1rem;">
+               <p><strong style="font-size: 1.6rem">Huda Putra Santosa</strong><br>
+                  <i style="font-size: 1.1rem">Software Engineer Junior</i> </p>
+                  <p style="font-size: 1rem">
                   Pemalang, 31 januari 2002 <br>
                   Jalan Jendral Sudirman, Dk. Bleder RT/RW 006/004 <br>
                   Ds. Tegalsari, Kecamatan Kandeman, Kabupaten Batang <br>
                   Provinsi Jawa Tengah
-                  </p>
-               
+                  </p> 
             </div>
          </div>
       </div>
@@ -430,7 +438,7 @@
          <!-- heading -->
          <div class="skill-heading">
             <!-- <span>My skill</span> -->
-            <h2>My Skill</h2>
+            <h1>My Skill</h1>
          </div>
          <div class="s-box-container">
             <div class="skill-box">
@@ -477,10 +485,10 @@
       </div>
    </section>
    <!-- Section contact -->
-     <div id="contact">
+     <section id="contact">
       <div class="profil-box-container">
          <div class="profil-boxx">
-            <div class="profil-headings">
+            <div class="contact-headings">
                <h1>My Contact</h1>
             </div>
             
@@ -503,7 +511,7 @@
             
          </div>
       </div>
-      </div>
+      
    </section>
 </body>
 
