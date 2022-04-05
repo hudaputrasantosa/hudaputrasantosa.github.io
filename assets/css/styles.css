@@ -3,15 +3,6 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-      Blue: hsl(207, 90%, 61%)
-      Purple: hsl(250, 66%, 75%)
-      Pink: hsl(356, 66%, 75%)
-      Teal: hsl(174, 63%, 62%)
-  */
-
   --hue: 207;
   --sat: 90%;
   --lig: 61%;
@@ -33,7 +24,7 @@
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --smaller-font-size: .8rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -43,7 +34,7 @@
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --smaller-font-size: .833rem;
   }
 }
 
@@ -137,8 +128,8 @@ body.dark-theme {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .grid {
@@ -202,10 +193,10 @@ body.dark-theme {
 }
 
 .profile__descripe {
-  font-size: var(--normal-font-size);
+  font-size: var(--smaller-font-size);
   font-weight: 350;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .profile__social {
@@ -215,7 +206,7 @@ body.dark-theme {
 }
 
 .profile__social-link {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   color: var(--title-color);
   transition: .3s;
 }
