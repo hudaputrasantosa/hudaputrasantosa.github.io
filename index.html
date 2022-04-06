@@ -22,7 +22,7 @@
                 </div>
 
                 <h2 class="profile__name">Huda Putra Santosa</h2>
-                <h3 class="profile__profession">Web developer | UI/UX Designer</h3>
+                <h3 class="profile__profession">Web Developer | UI/UX Designer</h3>
 
                 <div class="profile__info-group">
                     <div class="description_container">
@@ -293,9 +293,20 @@
                                 var mainContainer = document.getElementById("blog");
                                 for (let i = 0; i < data.length; i++) {
                                     var div = document.createElement("div");
-
-                                    div.innerHTML = data[i].pubDate;
-                                    div.innerHTML = data[i].title;
+                                    div.innerHTML = `
+                                    <article class="projects__card">
+                        <img src="assets/img/project4.jpg" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>    
+                                <span style="font-size:1rem;">`+ data[i].pubDate + `</span>
+                                <p class="projects__subtitle">Kategori : `+ data[i].categories + `</p>
+                                <h3 class="projects__title">`+ data[i].title + `</h3>        
+                                <a href="`+ data[i].link + `" target="_blank" class="projects__button button button__small">Lihat Selengkapnya Disini
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>`;
                                     mainContainer.appendChild(div);
                                 }
                             })
