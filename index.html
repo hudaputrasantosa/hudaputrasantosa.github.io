@@ -48,9 +48,7 @@
                     <a href="https://github.com/hudaputrasantosa" target="_blank" class="profile__social-link">
                         <i class="ri-github-line"></i>
                     </a>
-                    <a href="https://medium.com/@hudaputrasantosa" target="_blank" class="profile__social-link">
-                        <i class="ri-medium-line"></i>
-                    </a>
+
                     <a href="https://dribbble.com/hudaputrasantosa" target="_blank" class="profile__social-link">
                         <i class="ri-dribbble-line"></i>
                     </a>
@@ -118,33 +116,7 @@
                         </div>
                     </article>
 
-                    <article class="projects__card">
-                        <img src="assets/img/project3.jpg" alt="" class="projects__img">
 
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle">Movil</span>
-                                <h3 class="projects__title">Fast food app</h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="projects__card">
-                        <img src="assets/img/project4.jpg" alt="" class="projects__img">
-
-                        <div class="projects__modal">
-                            <div>
-                                <span class="projects__subtitle">Movil</span>
-                                <h3 class="projects__title">Travel app</h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
 
                 </div>
 
@@ -280,7 +252,7 @@
                 </div>
 
                 <!--=============== Blog ===============-->
-                <div class="blog__content grid" data-content id="blog">
+                <div class="projects__content grid" data-content id="blog">
 
 
 
@@ -294,17 +266,13 @@
                                 for (let i = 0; i < data.length; i++) {
                                     var div = document.createElement("div");
                                     div.innerHTML = `
-                                    <article class="projects__card">
-                        <img src="assets/img/project4.jpg" alt="" class="projects__img">
-                        <div class="projects__modal">
-                            <div>    
-                                <span style="font-size:1rem;">`+ data[i].pubDate + `</span>
-                                <p class="projects__subtitle">Kategori : `+ data[i].categories + `</p>
-                                <h3 class="projects__title">`+ data[i].title + `</h3>        
-                                <a href="`+ data[i].link + `" target="_blank" class="projects__button button button__small">Lihat Selengkapnya Disini
-                                    <i class="ri-link"></i>
-                                </a>
+                                    <article class="projects__card">                     
+                                        <a href="`+ data[i].link + `" target="_blank">                                                       
+                                         <div class="blogs__modal"> 
+                                    <p class="blogs__subtitle">`+ data[i].pubDate + `</p>
+                                <h4 style="color: var(--title-color);  font-family: var(--body-font);">`+ data[i].title + `</h4>                  
                             </div>
+                            </a>
                         </div>
                     </article>`;
                                     mainContainer.appendChild(div);
