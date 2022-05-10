@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Huda Putra Santosa</title>
@@ -37,7 +37,7 @@
                 </div>
 
                 <ul class="profile__social">
-                    <a href="https://www.instagram.com/hudazackyvee_6661" alt="huhu" target="_blank"
+                    <a href="https://www.instagram.com/hudazackyvee_6661" alt="" target="_blank"
                         class="profile__social-link">
                         <i class="ri-instagram-line"></i>
                     </a>
@@ -59,7 +59,7 @@
             </div>
 
             <div class="profile__buttons">
-                <a download="" href="assets/pdf/Gianell-Cv.pdf" class="button">
+                <a download="" href="assets/pdf/HudaPutra_CV_Mei 2022.pdf" target="_blank" class="button">
                     Download CV Saya <i class="ri-download-line"></i>
                 </a>
 
@@ -74,10 +74,13 @@
             <!--=============== FILTERS TABS ===============-->
             <ul class="filters__content">
                 <button class="filters__button filter-tab-active" data-target="#projects">
-                    Projects
+                    Project
+                </button>
+                <button class="filters__button" data-target="#">
+                    Exp
                 </button>
                 <button class="filters__button" data-target="#skills">
-                    Skills
+                    Skill
                 </button>
                 <button class="filters__button" data-target="#blog">
                     Blog
@@ -89,28 +92,26 @@
                 <div class="projects__content grid filters__active" data-content id="projects">
                     <article class="projects__card">
                         <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
+                        <img src="assets/img/project-1.jpg" alt="" class="projects__img">
 
                         <div class="projects__modal">
                             <div>
-                                <span class="projects__subtitle">Web</span>
-                                <h3 class="projects__title">Payment Site</h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
+                                <a href="">
+                                    <span class="projects__subtitle">Web Development</span>
+                                    <h3 class="projects__title">Webiste Laporan Pengaduan Masyarakat</h3>
                                 </a>
                             </div>
                         </div>
                     </article>
 
                     <article class="projects__card">
-                        <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                        <img src="assets/img/project-2.jpg" alt="" class="projects__img">
 
                         <div class="projects__modal">
                             <div>
-                                <span class="projects__subtitle">Web</span>
-                                <h3 class="projects__title">Portfolio website</h3>
-                                <a href="#" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
+                                <a href="http://javaservice-it.herokuapp.com/">
+                                    <span class="projects__subtitle">Web Development</span>
+                                    <h3 class="projects__title">Webiste Sistem Layanan Jasa IT</h3>
                                 </a>
                             </div>
                         </div>
@@ -185,6 +186,8 @@
                             </div>
                         </div>
                     </div>
+
+
 
                     <div class="skills__area">
                         <h3 class="skills__title">Backend Developer</h3>
@@ -269,8 +272,9 @@
                                     <article class="projects__card">                     
                                         <a href="`+ data[i].link + `" target="_blank">                                                       
                                          <div class="blogs__modal"> 
-                                    <p class="blogs__subtitle">`+ data[i].pubDate + `</p>
-                                <h4 style="color: var(--title-color);  font-family: var(--body-font);">`+ data[i].title + `</h4>                  
+                                    <p class="blogs__subtitle">`+ data[i].author + `</p>
+                                <h4 style="color: var(--title-color);  font-family: var(--body-font);">`+ data[i].title + `</h4> 
+                                <a href="" class="button-blog">Lihat Selengkapnya</a>               
                             </div>
                             </a>
                         </div>
@@ -294,7 +298,7 @@
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
         <span class="footer__copy">
-            &#169; Huda Putra Santosa. All rigths reserved
+            &#169; Huda Putra Santosa 2022. All rigths reserved
         </span>
     </footer>
 
