@@ -475,8 +475,9 @@ body.dark-theme {
 }
 
 .section__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   color: var(--title-color);
+  padding-bottom: 1.5rem;
 }
 
 .section__subtitle {
@@ -518,7 +519,7 @@ body {
 .qualification__tabs{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 
 .qualification__button{
@@ -536,6 +537,7 @@ body {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  text-align: center;
 }
 
 .qualification__title{
@@ -546,11 +548,11 @@ body {
 .qualification__subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 0.5rem;
 }
 
 .qualification__calendar{
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
 
@@ -570,13 +572,17 @@ body {
   transform: translate(6px, -7px);
 }
 
+.qualification__content{
+  padding-bottom: 2rem;
+}
+
 /* .qualification__content [data-content]{
   display: none;
 } */
 
-.qualification__active[data-content]{
+/* .qualification__active[data-content]{
   display: block;
-}
+} */
 
 
 /*=============== FOOTER ===============*/
