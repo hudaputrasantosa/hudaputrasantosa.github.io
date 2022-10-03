@@ -583,7 +583,20 @@ body {
 /* .qualification__active[data-content]{
   display: block;
 } */
+.visitor {
+  color: var(--first-color);
+  font-weight: bold;
+   }
+ 
+   .sosmed{
+     padding-bottom: 0.5rem;
+     color: var(--title-color);
+   }
 
+   .icon__eye{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+   }
 
 /*=============== FOOTER ===============*/
 .footer__copy {

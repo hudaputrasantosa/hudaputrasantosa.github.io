@@ -70,3 +70,15 @@ sr.reveal(`.profile__info-group`, { interval: 100, delay: 700 });
 sr.reveal(`.profile__buttons`, { delay: 800 });
 sr.reveal(`.filters__content`, { delay: 900 });
 sr.reveal(`.filters`, { delay: 1000 });
+
+// Visitor Page
+let counter = document.querySelector(".visitor");
+let visitCount = localStorage.getItem("page_view");
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", visitCount);
+}
+counter.innerHTML = visitCount;
