@@ -583,7 +583,7 @@ body {
 /* .qualification__active[data-content]{
   display: block;
 } */
-.visitor {
+#visitor {
   color: var(--first-color);
   font-weight: bold;
    }

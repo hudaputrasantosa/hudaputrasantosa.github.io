@@ -72,7 +72,7 @@ sr.reveal(`.filters__content`, { delay: 900 });
 sr.reveal(`.filters`, { delay: 1000 });
 
 // Visitor Page
-let counter = document.getElementById("id");
+let counter = document.getElementById("visitor");
 updateVisitor();
 function updateVisitor() {
   fetch("https://api.countapi.xyz/hit/hudaputrasantosa.github.io")
