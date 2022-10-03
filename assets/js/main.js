@@ -72,13 +72,12 @@ sr.reveal(`.filters__content`, { delay: 900 });
 sr.reveal(`.filters`, { delay: 1000 });
 
 // Visitor Page
-let counter = document.querySelector(".visitor");
-let visitCount = localStorage.getItem("page_view");
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", visitCount);
+let counter = document.getElementById("id");
+updateVisitor();
+function updateVisitor() {
+  fetch("https://api.countapi.xyz/hit/hudaputrasantosa.github.io")
+    .then((res) => res.json())
+    .then((res) => {
+      counter.innerHTML = res.value;
+    });
 }
-counter.innerHTML = visitCount;
