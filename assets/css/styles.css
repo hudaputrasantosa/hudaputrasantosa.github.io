@@ -189,16 +189,21 @@ body.dark-theme {
   justify-content: center;
 }
 
-.profile__perfil img {
-  width: 85px;
+.profile-img {
+  border-radius: 50%;
+   width: 135px;
+}
+
+.ri-instagram-line {
+  color: var(--first-color);
 }
 
 .profile__border {
-  border: 3.5px solid var(--first-color);
+  border: 4px solid #f1f1f1;
   justify-self: center;
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border-radius: 60%;
   display: grid;
   place-items: center;
   margin-bottom: .75rem;
@@ -226,12 +231,13 @@ body.dark-theme {
 .profile__social {
   display: flex;
   justify-content: center;
-  column-gap: .75rem;
+  column-gap: .85rem;
 }
 
 .profile__social-link {
-  font-size: 1.9rem;
-  color: var(--title-color);
+  font-size: 2rem;
+  /* color: var(--title-color); */
+  color: var(--first-color);
   transition: .3s;
 }
 
