@@ -201,9 +201,9 @@ body.dark-theme {
 .profile__border {
   border: 4px solid #f1f1f1;
   justify-self: center;
-  width: 160px;
-  height: 160px;
-  border-radius: 60%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
   margin-bottom: .75rem;
@@ -215,7 +215,7 @@ body.dark-theme {
 }
 
 .profile__profession {
-  font-size: var(--h4-font-size);
+  font-size: var(--small-font-size);
   font-weight: 500;
   color: var(--text-color);
   margin-bottom: 1rem;
