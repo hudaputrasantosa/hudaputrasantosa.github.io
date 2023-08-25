@@ -235,7 +235,7 @@ body.dark-theme {
 }
 
 .profile__social-link {
-  font-size: 2rem;
+  font-size: 2.3rem;
   /* color: var(--title-color); */
   color: var(--first-color);
   transition: .3s;
@@ -324,7 +324,7 @@ body.dark-theme {
 
 /*=============== FILTERS TABS===============*/
 .filters__content {
-  margin: 2rem 0 2.5rem;
+  margin: 2.5rem 0 2.5rem;
   background-color: var(--text-color-lighten);
   padding: .375rem;
   border-radius: .75rem;
@@ -368,7 +368,7 @@ body.dark-theme {
   position: absolute;
   width: 100%;
   height: 100%;
-  bottom: -100%;
+  bottom: 0;
 
   background: linear-gradient(180deg,
       hsla(var(--hue), 24%, 40%, .3) 0%,
@@ -391,7 +391,13 @@ body.dark-theme {
 }
 
 
-.projects__subtitle,
+.projects__subtitle{
+  font-size: 5pt;
+   color: #fff;
+   background-color: rgba(0, 208, 255, 0.278);
+   border-radius: 1rem;
+   padding: 3px 7px 3px 7px;
+}
 .projects__title {
   color: #fff;
 }
@@ -414,9 +420,9 @@ body.dark-theme {
   padding: .5rem;
 }
 
-.projects__card:hover .projects__modal {
+/* .projects__card:hover .projects__modal {
   bottom: 0;
-}
+} */
 
 /*=============== SKILLS ===============*/
 .skills__content {
