@@ -73,7 +73,6 @@ sr.reveal(`.filters`, { delay: 1000 });
 
 // Visitor Page
 let counter = document.getElementById("visitor");
-updateVisitor();
 function updateVisitor() {
   fetch("https://api.countapi.xyz/hit/hudaputrasantosa.github.io")
     .then((res) => res.json())
@@ -81,3 +80,4 @@ function updateVisitor() {
       counter.innerHTML = res.value;
     });
 }
+updateVisitor();
