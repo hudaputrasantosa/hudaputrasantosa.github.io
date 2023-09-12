@@ -74,7 +74,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s;
+  /* transition: .3s; */
   /* For animation dark mode */
 }
 
@@ -395,11 +395,12 @@ body.dark-theme {
   font-size: 5pt;
    color: #fff;
    background-color: rgba(0, 208, 255, 0.278);
-   border-radius: 1rem;
-   padding: 3px 7px 3px 7px;
+   border-radius: 6px;
+   padding: 2px 5px 2px 5px;
 }
 .projects__title {
   color: #fff;
+  padding-top: 4px;
 }
 
 .blogs__subtitle {
