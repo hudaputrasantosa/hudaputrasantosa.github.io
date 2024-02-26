@@ -1,11 +1,22 @@
-import { Flex, Text, Button } from "@radix-ui/themes";
+import ContentLayout from "../../components/ContentLayout";
+import Navbar from "../../components/Navbar";
 
 const About = () => {
   return (
-    <Flex direction="row" gap="2">
-      <Text>Hello from Radix Themes </Text>
-      <Button>Lets go</Button>
-    </Flex>
+    <>
+      <Navbar />
+      <ContentLayout>
+        <div className="flex flex-col gap-3 border">
+          <h2 className="font-bold text-xl">About</h2>
+          <p className="">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+            nulla beatae quisquam libero accusantium quibusdam, veniam nostrum
+            aperiam ipsam perferendis sint laborum odit? Eos tenetur iste
+            repudiandae repellat repellendus ea.
+          </p>
+        </div>
+      </ContentLayout>
+    </>
   );
 };
 
