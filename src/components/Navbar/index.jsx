@@ -24,15 +24,17 @@ const Navbar = () => {
   ));
 
   return (
-    <header className={classes.header}>
-      <Container size="sm" className={classes.inner}>
-        <Group gap={5} visibleFrom="xs">
-          {items}
-        </Group>
-        <h1>Theme</h1>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
-      </Container>
-    </header>
+    <div className="relative sticky bg-white top-0">
+      <header className={classes.header}>
+        <Container size="sm" className={classes.inner}>
+          <Group gap={5} visibleFrom="xs">
+            {items}
+          </Group>
+          <h1>Theme</h1>
+          <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        </Container>
+      </header>
+    </div>
   );
 };
 
