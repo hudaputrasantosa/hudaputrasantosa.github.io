@@ -1,4 +1,5 @@
 import ContentLayout from "../../components/ContentLayout";
+import Nav from "../../components/Nav";
 import Navbar from "../../components/Navbar";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
