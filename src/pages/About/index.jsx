@@ -1,9 +1,8 @@
 import ContentLayout from "../../components/ContentLayout";
-import Nav from "../../components/Nav";
 import Navbar from "../../components/Navbar";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
-import { HiBriefcase, HiAcademicCap } from "react-icons/hi";
+import { HiBriefcase, HiAcademicCap, HiPuzzle } from "react-icons/hi";
 
 const About = () => {
   return (
@@ -41,6 +40,7 @@ const About = () => {
               and meet user needs.
             </p>
           </section>
+
           <section className="flex flex-col gap-4 pt-4 ">
             <h2 className="font-bold text-3xl">Work Experience</h2>
             <div className="ml-3">
@@ -55,7 +55,7 @@ const About = () => {
                 <TimelineSection
                   iconTimeline={HiBriefcase}
                   titleText="Institut Teknologi Telkom Purwokerto"
-                  subTitleText="Data Laboratory Assistant"
+                  subTitleText="Database Class Lecturer"
                   dateText="October 2022 - January 2023"
                   descriptionText=""
                 />
@@ -64,6 +64,28 @@ const About = () => {
                   titleText="PT Telkom Indonesia"
                   subTitleText="Backend Web Developer"
                   dateText="Jul - Dec 2022"
+                  descriptionText=""
+                />
+              </Timeline>
+            </div>
+          </section>
+
+          <section className="flex flex-col gap-4 pt-4 ">
+            <h2 className="font-bold text-3xl">Tech Training & Organization</h2>
+            <div className="ml-3">
+              <Timeline>
+                <TimelineSection
+                  iconTimeline={HiPuzzle}
+                  titleText="Bangkit Academy By Google, GoTo & Traveloka"
+                  subTitleText="Cloud Computing"
+                  dateText="February - August 2023"
+                  descriptionText=""
+                />
+                <TimelineSection
+                  iconTimeline={HiPuzzle}
+                  titleText="Himpunan Mahasiswa Software Engineering"
+                  subTitleText="Head of Media and Information Division"
+                  dateText="Maret 2022 - Juli 2023"
                   descriptionText=""
                 />
               </Timeline>
