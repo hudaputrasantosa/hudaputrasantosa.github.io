@@ -1,7 +1,4 @@
 import { Card } from "flowbite-react";
-// import Zoom from "react-medium-image-zoom";
-// import "react-medium-image-zoom/dist/styles.css";
-import { HiLink, HiCode } from "react-icons/hi";
 
 function CardComponent({
   photoCard,
@@ -22,12 +19,8 @@ function CardComponent({
       <div className="flex items-center">
         <div className=" flex gap-1 basis-1/2">{stacks}</div>
         <div className="flex items-center justify-end basis-1/2 gap-1">
-          <a href={linkRepository} target="_blank">
-            <HiCode className="w-7 h-7 p-1 bg-slate-100 rounded-lg" />
-          </a>
-          <a href={linkDeployment} target="_blank">
-            <HiLink className="w-7 h-7 p-1 bg-slate-100 rounded-lg cursor-pointer" />
-          </a>
+          {linkRepository}
+          {linkDeployment}
         </div>
       </div>
     </Card>

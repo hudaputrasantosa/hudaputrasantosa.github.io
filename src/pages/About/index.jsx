@@ -3,6 +3,11 @@ import Navbar from "../../components/Navbar";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
 import { HiBriefcase, HiAcademicCap, HiPuzzle } from "react-icons/hi";
+import {
+  educationExperience,
+  trainingExperience,
+  workExperience,
+} from "../../response/about";
 
 const About = () => {
   return (
@@ -45,27 +50,16 @@ const About = () => {
             <h2 className="font-bold text-3xl">Work Experience</h2>
             <div className="ml-3">
               <Timeline>
-                <TimelineSection
-                  iconTimeline={HiBriefcase}
-                  titleText="PT Talenta Sinergi Group"
-                  subTitleText="Frontend Web Developer"
-                  dateText="December 2023 - February 2024"
-                  descriptionText=""
-                />
-                <TimelineSection
-                  iconTimeline={HiBriefcase}
-                  titleText="Institut Teknologi Telkom Purwokerto"
-                  subTitleText="Database Class Lecturer"
-                  dateText="October 2022 - January 2023"
-                  descriptionText=""
-                />
-                <TimelineSection
-                  iconTimeline={HiBriefcase}
-                  titleText="PT Telkom Indonesia"
-                  subTitleText="Backend Web Developer"
-                  dateText="Jul - Dec 2022"
-                  descriptionText=""
-                />
+                {workExperience.map((work, idx) => (
+                  <TimelineSection
+                    key={idx}
+                    iconTimeline={HiBriefcase}
+                    titleText={work.institution}
+                    subTitleText={work.position}
+                    dateText={work.date}
+                    descriptionText={work.description}
+                  />
+                ))}
               </Timeline>
             </div>
           </section>
@@ -74,20 +68,16 @@ const About = () => {
             <h2 className="font-bold text-3xl">Tech Training & Organization</h2>
             <div className="ml-3">
               <Timeline>
-                <TimelineSection
-                  iconTimeline={HiPuzzle}
-                  titleText="Bangkit Academy By Google, GoTo & Traveloka"
-                  subTitleText="Cloud Computing"
-                  dateText="February - August 2023"
-                  descriptionText=""
-                />
-                <TimelineSection
-                  iconTimeline={HiPuzzle}
-                  titleText="Himpunan Mahasiswa Software Engineering"
-                  subTitleText="Head of Media and Information Division"
-                  dateText="Maret 2022 - Juli 2023"
-                  descriptionText=""
-                />
+                {trainingExperience.map((training, idx) => (
+                  <TimelineSection
+                    key={idx}
+                    iconTimeline={HiPuzzle}
+                    titleText={training.institution}
+                    subTitleText={training.position}
+                    dateText={training.date}
+                    descriptionText={training.description}
+                  />
+                ))}
               </Timeline>
             </div>
           </section>
@@ -96,18 +86,16 @@ const About = () => {
             <h2 className="font-bold text-3xl">Education</h2>
             <div className="ml-3">
               <Timeline>
-                <TimelineSection
-                  iconTimeline={HiAcademicCap}
-                  titleText="Telkom University Nasional Purwokerto"
-                  subTitleText="Software Engineering"
-                  dateText="September 2020 - February 2024"
-                />
-                <TimelineSection
-                  iconTimeline={HiAcademicCap}
-                  titleText="SMK Negeri 1 Kandeman"
-                  subTitleText="Software Engineering"
-                  dateText="September 2017 - Maret 2020"
-                />
+                {educationExperience.map((education, idx) => (
+                  <TimelineSection
+                    key={idx}
+                    iconTimeline={HiAcademicCap}
+                    titleText={education.institution}
+                    subTitleText={education.position}
+                    dateText={education.date}
+                    descriptionText={education.description}
+                  />
+                ))}
               </Timeline>
             </div>
           </section>
