@@ -8,7 +8,7 @@ const TimelineSection = ({
   descriptionText,
 }) => {
   return (
-    <div className="static">
+    <div className="">
       <Timeline.Item>
         <Timeline.Point icon={iconTimeline} />
         <Timeline.Content>

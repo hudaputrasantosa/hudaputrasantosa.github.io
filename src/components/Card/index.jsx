@@ -7,9 +7,10 @@ function CardComponent({
   stacks,
   linkRepository,
   linkDeployment,
+  additionaComponent,
 }) {
   return (
-    <Card className="max-w-md" imgAlt={`${titleCard}-photo`} imgSrc={photoCard}>
+    <Card className="w-full" imgAlt={`${titleCard}-photo`} imgSrc={photoCard}>
       <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
         {titleCard}
       </h5>
@@ -23,6 +24,7 @@ function CardComponent({
           {linkDeployment}
         </div>
       </div>
+      {additionaComponent}
     </Card>
   );
 }

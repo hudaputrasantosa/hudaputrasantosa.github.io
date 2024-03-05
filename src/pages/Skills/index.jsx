@@ -1,5 +1,4 @@
 import ContentLayout from "../../components/ContentLayout";
-import Navbar from "../../components/Navbar";
 import TabLayout from "../../components/TabLayout";
 import { Tabs } from "flowbite-react";
 import {
@@ -12,17 +11,16 @@ import {
 const Skills = () => {
   return (
     <>
-      <Navbar />
       <ContentLayout>
         <div className="flex flex-col gap-3">
           <section className="flex flex-col gap-4 py-4">
             <h2 className="font-bold text-3xl">Skills</h2>
-            <p className="">
+            {/* <p className="">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
               nulla beatae quisquam libero accusantium quibusdam, veniam nostrum
               aperiam ipsam perferendis sint laborum odit? Eos tenetur iste
               repudiandae repellat repellendus ea.
-            </p>
+            </p> */}
             <TabLayout>
               <Tabs.Item active title="Language">
                 <div className="grid lg:grid-cols-5 grid-cols-3 lg:gap-6 gap-3 text-base font-medium">

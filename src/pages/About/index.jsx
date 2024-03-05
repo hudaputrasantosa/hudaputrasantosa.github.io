@@ -1,5 +1,4 @@
 import ContentLayout from "../../components/ContentLayout";
-import Navbar from "../../components/Navbar";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
 import { HiBriefcase, HiAcademicCap, HiPuzzle } from "react-icons/hi";
@@ -12,19 +11,16 @@ import {
 const About = () => {
   return (
     <>
-      <Navbar />
       <ContentLayout>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 ">
           <section className="flex flex-col gap-4 py-4">
             <div className="flex flex-col items-center gap-2 mb-4">
               <img
                 src="./src/assets/huda-putra-santosa.png"
                 className="rounded-full w-40 border-4 border-gray-100 "
               />
-              <h4 className="text-gray-700 text-3xl font-bold">
-                Huda Putra Santosa
-              </h4>
-              <p className="text-gray-700 text-base font-medium">
+              <h4 className="text-3xl font-bold">Huda Putra Santosa</h4>
+              <p className="text-base font-medium">
                 Software Engineer | Fullstack Developer | Cloud Engineer
               </p>
             </div>
