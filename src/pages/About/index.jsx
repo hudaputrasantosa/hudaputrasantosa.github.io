@@ -16,7 +16,7 @@ const About = () => {
           <section className="flex flex-col gap-4 py-4">
             <div className="flex flex-col items-center gap-2 mb-4">
               <img
-                src="./src/assets/huda-putra-santosa.png"
+                src="https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/src/assets/huda-putra-santosa.png"
                 className="rounded-full w-40 border-4 border-gray-100 "
               />
               <h4 className="text-3xl font-bold">Huda Putra Santosa</h4>

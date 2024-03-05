@@ -1,141 +1,143 @@
+const baseUrl =
+  "https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main";
 const languageSkill = [
   {
-    icon: "./src/assets/icons/html.svg",
+    icon: `${baseUrl}/src/assets/icons/html.svg`,
     title: "HTML",
   },
   {
-    icon: "./src/assets/icons/css.svg",
+    icon: `${baseUrl}/src/assets/icons/css.svg`,
     title: "CSS",
   },
   {
-    icon: "./src/assets/icons/javascript.svg",
+    icon: `${baseUrl}/src/assets/icons/javascript.svg`,
     title: "Javascript",
   },
   {
-    icon: "./src/assets/icons/typescript.svg",
+    icon: `${baseUrl}/src/assets/icons/typescript.svg`,
     title: "Typescript",
   },
   {
-    icon: "./src/assets/icons/php.svg",
+    icon: `${baseUrl}/src/assets/icons/php.svg`,
     title: "PHP",
   },
   {
-    icon: "./src/assets/icons/nodejs.svg",
+    icon: `${baseUrl}/src/assets/icons/nodejs.svg`,
     title: "Node JS",
   },
   {
-    icon: "./src/assets/icons/golang.svg",
+    icon: `${baseUrl}/src/assets/icons/golang.svg`,
     title: "Golang",
   },
   {
-    icon: "./src/assets/icons/java.svg",
+    icon: `${baseUrl}/src/assets/icons/java.svg`,
     title: "Java",
   },
 ];
 
 const frameworkSkill = [
   {
-    icon: "./src/assets/icons/express.svg",
+    icon: `${baseUrl}/src/assets/icons/express.svg`,
     title: "Express",
   },
   {
-    icon: "./src/assets/icons/nest.svg",
+    icon: `${baseUrl}/src/assets/icons/nest.svg`,
     title: "Nest JS",
   },
   {
-    icon: "./src/assets/icons/laravel.svg",
+    icon: `${baseUrl}/src/assets/icons/laravel.svg`,
     title: "Laravel",
   },
   {
-    icon: "./src/assets/icons/codeigniter.svg",
+    icon: `${baseUrl}/src/assets/icons/codeigniter.svg`,
     title: "Codeigniter",
   },
   {
-    icon: "./src/assets/icons/gingonic.svg",
+    icon: `${baseUrl}/src/assets/icons/gingonic.svg`,
     title: "Gin Gonic",
   },
   {
-    icon: "./src/assets/icons/react.svg",
+    icon: `${baseUrl}/src/assets/icons/react.svg`,
     title: "React JS",
   },
   {
-    icon: "./src/assets/icons/vue.svg",
+    icon: `${baseUrl}/src/assets/icons/vue.svg`,
     title: "Vue JS",
   },
   {
-    icon: "./src/assets/icons/alpine.svg",
+    icon: `${baseUrl}/src/assets/icons/alpine.svg`,
     title: "Alpine JS",
   },
   {
-    icon: "./src/assets/icons/tailwind.svg",
+    icon: `${baseUrl}/src/assets/icons/tailwind.svg`,
     title: "TailwindCSS",
   },
   {
-    icon: "./src/assets/icons/flowbite.svg",
+    icon: `${baseUrl}/src/assets/icons/flowbite.svg`,
     title: "Flowbite",
   },
 ];
 const toolsSkill = [
   {
-    icon: "./src/assets/icons/git.svg",
+    icon: `${baseUrl}/src/assets/icons/git.svg`,
     title: "Git",
   },
   {
-    icon: "./src/assets/icons/postman.svg",
+    icon: `${baseUrl}/src/assets/icons/postman.svg`,
     title: "Postman",
   },
   {
-    icon: "./src/assets/icons/swagger.svg",
+    icon: `${baseUrl}/src/assets/icons/swagger.svg`,
     title: "Swagger",
   },
   {
-    icon: "./src/assets/icons/jest.svg",
+    icon: `${baseUrl}/src/assets/icons/jest.svg`,
     title: "Jest",
   },
   {
-    icon: "./src/assets/icons/redis.svg",
+    icon: `${baseUrl}/src/assets/icons/redis.svg`,
     title: "Redis",
   },
   {
-    icon: "./src/assets/icons/socketio.svg",
+    icon: `${baseUrl}/src/assets/icons/socketio.svg`,
     title: "Socket IO",
   },
   {
-    icon: "./src/assets/icons/kafka.svg",
+    icon: `${baseUrl}/src/assets/icons/kafka.svg`,
     title: "Kafka",
   },
   {
-    icon: "./src/assets/icons/docker.svg",
+    icon: `${baseUrl}/src/assets/icons/docker.svg`,
     title: "Docker",
   },
   {
-    icon: "./src/assets/icons/gcp.svg",
+    icon: `${baseUrl}/src/assets/icons/gcp.svg`,
     title: "Google Cloud",
   },
 ];
 const dbmsSkill = [
   {
-    icon: "./src/assets/icons/mysql.svg",
+    icon: `${baseUrl}/src/assets/icons/mysql.svg`,
     title: "MySQL",
   },
   {
-    icon: "./src/assets/icons/postgresql.svg",
+    icon: `${baseUrl}/src/assets/icons/postgresql.svg`,
     title: "PostgreSQL",
   },
   {
-    icon: "./src/assets/icons/mongodb.svg",
+    icon: `${baseUrl}/src/assets/icons/mongodb.svg`,
     title: "Mongo DB",
   },
   {
-    icon: "./src/assets/icons/eloquent.svg",
+    icon: `${baseUrl}/src/assets/icons/eloquent.svg`,
     title: "Eloquent",
   },
   {
-    icon: "./src/assets/icons/sequelize.svg",
+    icon: `${baseUrl}/src/assets/icons/sequelize.svg`,
     title: "Sequelize",
   },
   {
-    icon: "./src/assets/icons/prisma.svg",
+    icon: `${baseUrl}/src/assets/icons/prisma.svg`,
     title: "Prisma",
   },
 ];
