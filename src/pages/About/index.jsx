@@ -14,18 +14,20 @@ const About = () => {
       <ContentLayout>
         <div className="flex flex-col gap-3 ">
           <section className="flex flex-col gap-4 py-4">
-            <div className="flex flex-col items-center gap-2 mb-4">
+            <div className="flex flex-col items-center text-center gap-2 mb-4">
               <img
                 src="https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/src/assets/huda-putra-santosa.png"
                 className="rounded-full w-40 border-4 border-gray-100 "
               />
-              <h4 className="text-3xl font-bold">Huda Putra Santosa</h4>
-              <p className="text-base font-medium">
+              <h4 className="lg:text-3xl text-2xl font-bold">
+                Huda Putra Santosa
+              </h4>
+              <p className="lg:text-sm text-xs font-medium">
                 Software Engineer | Fullstack Developer | Cloud Engineer
               </p>
             </div>
-            <h2 className="font-bold text-3xl">About</h2>
-            <p className="text-justify">
+            <h2 className="font-bold lg:text-3xl text-2xl">About</h2>
+            <p className="text-justify text-sm antialiased ">
               Graduated from Institut Teknologi Telkom Purwokerto with a major
               in S1 Software Engineering in 2020-2024. Has completed the college
               time in 3.5 years with a GPA of 3.92. Have an internship
@@ -43,7 +45,7 @@ const About = () => {
           </section>
 
           <section className="flex flex-col gap-4 pt-4 ">
-            <h2 className="font-bold text-3xl">Work Experience</h2>
+            <h2 className="font-bold lg:text-3xl text-2xl">Work Experience</h2>
             <div className="ml-3">
               <Timeline>
                 {workExperience.map((work, idx) => (
@@ -61,7 +63,9 @@ const About = () => {
           </section>
 
           <section className="flex flex-col gap-4 pt-4 ">
-            <h2 className="font-bold text-3xl">Tech Training & Organization</h2>
+            <h2 className="font-bold lg:text-3xl text-2xl">
+              Training & Organization
+            </h2>
             <div className="ml-3">
               <Timeline>
                 {trainingExperience.map((training, idx) => (
@@ -79,7 +83,7 @@ const About = () => {
           </section>
 
           <section className="flex flex-col gap-4 pt-4">
-            <h2 className="font-bold text-3xl">Education</h2>
+            <h2 className="font-bold lg:text-3xl text-2xl">Education</h2>
             <div className="ml-3">
               <Timeline>
                 {educationExperience.map((education, idx) => (

@@ -25,13 +25,17 @@ const Projects = () => {
                       descriptionCard={project.description}
                       linkRepository={
                         <a href={project.repo} target="_blank">
-                          <HiCode className="w-7 h-7 p-1 bg-slate-200 rounded-lg" />
+                          <HiCode className="w-7 h-7 p-1 bg-slate-200 text-slate-800 rounded-lg" />
                         </a>
                       }
                       linkDeployment={
-                        <a href={project.link} target="_blank">
-                          <HiLink className="w-7 h-7 p-1 bg-slate-200 rounded-lg cursor-pointer" />
-                        </a>
+                        project.link ? (
+                          <a href={project.link} target="_blank">
+                            <HiLink className="w-7 h-7 p-1 bg-slate-200 text-slate-800 rounded-lg cursor-pointer" />
+                          </a>
+                        ) : (
+                          ""
+                        )
                       }
                       stacks={project.stacks.map((stack, idx) => (
                         <img
@@ -51,23 +55,19 @@ const Projects = () => {
                 {apiProjects.map((project) => (
                   <>
                     <CardComponent
-                      photoCard={project.image}
+                      // photoCard={project.image}
                       titleCard={project.title}
                       descriptionCard={project.description}
                       linkRepository={
                         <a href={project.repo} target="_blank">
-                          <HiCode className="w-7 h-7 p-1 bg-slate-200 rounded-lg" />
-                        </a>
-                      }
-                      linkDeployment={
-                        <a href={project.link} target="_blank">
-                          <HiLink className="w-7 h-7 p-1 bg-slate-200 rounded-lg cursor-pointer" />
+                          <HiCode className="w-7 h-7 p-1 bg-slate-200 text-slate-800 rounded-lg" />
                         </a>
                       }
                       stacks={project.stacks.map((stack, idx) => (
                         <img
                           key={idx}
                           src={stack}
+                          alt={stack}
                           className="w-8 bg-slate-100 p-1 rounded-lg"
                         />
                       ))}
