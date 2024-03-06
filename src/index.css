@@ -1,18 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 ::-webkit-scrollbar {
     display: none;
 }
 
+body {
+    font-family: "Futura PT", "Open Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+    font-size: 14px;
+}
 
-/* 
-:root {
+
+/* :root {
     font-family: Poppins;
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

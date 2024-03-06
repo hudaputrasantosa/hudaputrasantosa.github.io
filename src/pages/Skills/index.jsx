@@ -27,13 +27,13 @@ const Skills = () => {
                   {languageSkill.map((language, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
+                      className="flex flex-col lg:gap-2 gap-1 border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
                       <img
                         src={language.icon}
                         alt={`${language.title}-logo`}
                         loading="lazy"
                       />
-                      <h6>{language.title}</h6>
+                      <h6 className="text-sm font-medium">{language.title}</h6>
                     </div>
                   ))}
                 </div>
@@ -43,13 +43,13 @@ const Skills = () => {
                   {frameworkSkill.map((framework, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
+                      className="flex flex-col lg:gap-2 gap-1 border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
                       <img
                         src={framework.icon}
                         alt={`${framework.title}-logo`}
                         loading="lazy"
                       />
-                      <h6>{framework.title}</h6>
+                      <h6 className="text-sm font-medium">{framework.title}</h6>
                     </div>
                   ))}
                 </div>
@@ -60,13 +60,13 @@ const Skills = () => {
                   {toolsSkill.map((tool, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
+                      className="flex flex-col lg:gap-2 gap-1 border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
                       <img
                         src={tool.icon}
                         alt={`${tool.title}-logo`}
                         loading="lazy"
                       />
-                      <h6>{tool.title}</h6>
+                      <h6 className="text-sm font-medium">{tool.title}</h6>
                     </div>
                   ))}
                 </div>
@@ -77,13 +77,13 @@ const Skills = () => {
                   {dbmsSkill.map((dbms, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
+                      className="flex flex-col lg:gap-2 gap-1 border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
                       <img
                         src={dbms.icon}
                         alt={`${dbms.title}-logo`}
                         loading="lazy"
                       />
-                      <h6>{dbms.title}</h6>
+                      <h6 className="text-sm font-medium">{dbms.title}</h6>
                     </div>
                   ))}
                 </div>

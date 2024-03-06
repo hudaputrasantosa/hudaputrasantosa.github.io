@@ -14,6 +14,10 @@ const languageSkill = [
     title: "Javascript",
   },
   {
+    icon: `${baseUrl}/src/assets/icons/jquery.svg`,
+    title: "JQuery",
+  },
+  {
     icon: `${baseUrl}/src/assets/icons/typescript.svg`,
     title: "Typescript",
   },
