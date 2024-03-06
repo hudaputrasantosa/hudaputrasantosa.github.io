@@ -26,8 +26,8 @@ function Nav() {
     <div className="relative">
       <Navbar fluid rounded className="sticky top-0 border-b-2 mx-30">
         <NavbarToggle />
-        <NavbarCollapse className="lg:pl-48">{items}</NavbarCollapse>
-        <NavbarBrand className="lg:pr-48">
+        <NavbarCollapse className="lg:pl-80">{items}</NavbarCollapse>
+        <NavbarBrand className="lg:pr-80">
           <DarkThemeToggle />
         </NavbarBrand>
       </Navbar>
