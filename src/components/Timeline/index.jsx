@@ -8,12 +8,16 @@ const TimelineSection = ({
   descriptionText,
 }) => {
   return (
-    <div className="">
+    <div>
       <Timeline.Item>
         <Timeline.Point icon={iconTimeline} />
         <Timeline.Content>
-          <Timeline.Title>{titleText}</Timeline.Title>
-          <Timeline.Body className="mb-0">{subTitleText}</Timeline.Body>
+          <Timeline.Title className="lg:text-lg text-base">
+            {titleText}
+          </Timeline.Title>
+          <Timeline.Body className="mb-0 lg:text-sm text-sm">
+            {subTitleText}
+          </Timeline.Body>
           <Timeline.Time>{dateText}</Timeline.Time>
           <Timeline.Body className="mt-2 text-sm">
             {descriptionText}
