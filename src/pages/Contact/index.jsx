@@ -36,7 +36,11 @@ const Contact = () => {
       <ContentLayout>
         <section className="flex flex-col gap-2 py-4">
           <h2 className="font-bold text-3xl">Contact</h2>
-          <div className="justify-center text-center mt-8">
+          <div className="flex flex-col items-center justify-center text-center mt-4">
+            <img
+              src="https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/src/assets/iconic.png"
+              className="rounded-full w-40 border-4 border-gray-700 mb-1"
+            />
             <h4 className="text-2xl font-bold text-blue-500">Let's Connect</h4>
             <p className="my-4">
               Connection Is the Key to Personal and Career Success. Sometimes,
