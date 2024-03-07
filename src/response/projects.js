@@ -24,6 +24,8 @@ const webProjects = [
     stacks: [
       `${baseUrl}/src/assets/icons/laravel.svg`,
       `${baseUrl}/src/assets/icons/javascript.svg`,
+      `${baseUrl}/src/assets/icons/jquery.svg`,
+      `${baseUrl}/src/assets/icons/alpine.svg`,
       `${baseUrl}/src/assets/icons/tailwind.svg`,
       `${baseUrl}/src/assets/icons/mysql.svg`,
     ],
@@ -126,6 +128,7 @@ const apiProjects = [
       `${baseUrl}/src/assets/icons/express.svg`,
       `${baseUrl}/src/assets/icons/mongodb.svg`,
       `${baseUrl}/src/assets/icons/prisma.svg`,
+      `${baseUrl}/src/assets/icons/postman.svg`,
     ],
     repo: "https://github.com/hudaputrasantosa/todolist-with-mevn",
   },

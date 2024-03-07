@@ -14,10 +14,6 @@ const languageSkill = [
     title: "Javascript",
   },
   {
-    icon: `${baseUrl}/src/assets/icons/jquery.svg`,
-    title: "JQuery",
-  },
-  {
     icon: `${baseUrl}/src/assets/icons/typescript.svg`,
     title: "Typescript",
   },
@@ -69,6 +65,10 @@ const frameworkSkill = [
     title: "Vue JS",
   },
   {
+    icon: `${baseUrl}/src/assets/icons/jquery.svg`,
+    title: "JQuery",
+  },
+  {
     icon: `${baseUrl}/src/assets/icons/alpine.svg`,
     title: "Alpine JS",
   },
@@ -79,6 +79,10 @@ const frameworkSkill = [
   {
     icon: `${baseUrl}/src/assets/icons/flowbite.svg`,
     title: "Flowbite",
+  },
+  {
+    icon: `${baseUrl}/src/assets/icons/bootstrap.svg`,
+    title: "Bootstrap",
   },
 ];
 const toolsSkill = [
