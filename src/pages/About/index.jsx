@@ -16,8 +16,9 @@ const About = () => {
           <section className="flex flex-col gap-4 py-4">
             <div className="flex flex-col items-center text-center gap-2 mb-4">
               <img
-                src="https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/src/assets/huda-putra-santosa.png"
+                src="https://res.cloudinary.com/daxz4cuqx/image/upload/v1709810036/assets/images/profiles/huda-putra-santosa_bxzjrh.jpg"
                 className="rounded-full w-40 border-4 border-gray-100 "
+                loading="lazy"
               />
               <h4 className="lg:text-3xl text-2xl font-bold">
                 Huda Putra Santosa

@@ -1,52 +1,48 @@
 const baseUrl =
-  "https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main";
+  "https://res.cloudinary.com/daxz4cuqx/image/upload/v1709809920/assets/images/certificates";
 const certificates = [
   {
-    image: `${baseUrl}/src/assets/img/certificates/pengembang_software.jpg`,
+    image: `${baseUrl}/pengembang_software_u3oubm.jpg`,
     title: "Pengembang Software",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/web.jpg`,
+    image: `${baseUrl}/web_a9ijfi.jpg`,
     title: "Belajar Web",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/pengembang_software.jpg`,
-    title: "Pengembang Software",
-  },
-  {
-    image: `${baseUrl}/src/assets/img/certificates/javascript.jpg`,
+    image: `${baseUrl}/javascript_ien97q.jpg`,
     title: "Belajar Javascript",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/frontend.jpg`,
+    image: `${baseUrl}/frontend_lbxekb.jpg`,
     title: "Belajar Frontend developer",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/backend.jpg`,
+    image: `${baseUrl}/backend_sz4cn7.jpg`,
     title: "Belajar Backend dev",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/sql.jpg`,
+    image: `${baseUrl}/sql_wswfr6.jpg`,
     title: "Belajar sql",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/git.jpg`,
+    image: `${baseUrl}/git_vs3hfx.jpg`,
     title: "Belajar git",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/devops.jpg`,
+    image: `${baseUrl}/devops_lw60cd.jpg`,
     title: "Belajar devops",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/cloud_arsitek.jpg`,
+    image: `${baseUrl}/cloud_arsitek_koqffi.jpg`,
     title: "Belajar cloud arsitek",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/cloud_engineer.jpg`,
+    image: `${baseUrl}/cloud_engineer_e8gvcl.jpg`,
     title: "Belajar cloud engineering",
   },
   {
-    image: `${baseUrl}/src/assets/img/certificates/web_developer.jpg`,
+    image: `${baseUrl}/web_developer_lodidq.jpg`,
     title: "Sertifikasi Kompetensi web developer",
   },
 ];

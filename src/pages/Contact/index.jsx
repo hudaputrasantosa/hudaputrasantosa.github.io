@@ -38,8 +38,9 @@ const Contact = () => {
           <h2 className="font-bold text-3xl">Contact</h2>
           <div className="flex flex-col items-center justify-center text-center mt-4">
             <img
-              src="https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/src/assets/iconic.png"
+              src="https://res.cloudinary.com/daxz4cuqx/image/upload/v1709810038/assets/images/profiles/iconic_ix1anm.png"
               className="rounded-full w-40 border-4 border-gray-700 mb-1"
+              loading="lazy"
             />
             <h4 className="text-2xl font-bold text-blue-500">Let's Connect</h4>
             <p className="my-4">
