@@ -1,5 +1,11 @@
 const workExperience = [
   {
+    institution: "VocaGame",
+    position: "Backend Engineer",
+    date: "March 2024 - Now",
+    description: "",
+  },
+  {
     institution: "PT Talenta Sinergi Group",
     position: "Frontend Web Developer",
     date: "December 2023 - February 2024",
@@ -21,7 +27,7 @@ const workExperience = [
 const trainingExperience = [
   {
     institution: "Bangkit Academy By Google, GoTo & Traveloka",
-    position: "Cloud Computing",
+    position: "Cloud Computing Cohort",
     date: "February - August 2023",
     description: "",
   },
