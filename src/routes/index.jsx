@@ -7,13 +7,15 @@ import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import Certification from "../pages/Certification";
 import ScrollToTop from "../helpers/ScrollToTop";
+import Service from "../pages/Service";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <ScrollToTop>
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Service />} />
+          <Route path="/me" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certification" element={<Certification />} />
