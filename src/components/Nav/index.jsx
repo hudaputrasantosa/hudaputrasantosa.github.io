@@ -12,7 +12,7 @@ import ScrollDirection from "../../helpers/ScrollDirection";
 function Nav() {
   const scrollDirection = ScrollDirection();
   const links = [
-    { link: "/me", label: "About" },
+    { link: "/", label: "About" },
     { link: "/skills", label: "Skill" },
     { link: "/projects", label: "Projects" },
     { link: "/certification", label: "Certification" },
