@@ -27,7 +27,7 @@ const Skills = () => {
                   {languageSkill.map((language, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col lg:gap-2 gap-1 border border-gray-300 px-2 py-3 rounded-lg items-center justify-center text-center">
+                      className="flex flex-col lg:gap-2 gap-1 border border-gray-300  px-2 py-3 rounded-lg items-center justify-center text-center">
                       <img
                         src={language.icon}
                         alt={`${language.title}-logo`}

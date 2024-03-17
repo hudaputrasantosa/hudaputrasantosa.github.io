@@ -25,12 +25,12 @@ function Nav() {
     </NavbarLink>
   ));
   return (
-    <div className="relative mb-16  ">
+    <div className="relative mb-16">
       <Navbar
         fluid
         className={`sticky ${
           scrollDirection == "down" ? "hidden" : "block"
-        } top-0 fixed z-10 w-full border-b shadow-none transition-all`}>
+        } top-0 fixed z-10 w-full border-b shadow-none dark:bg-slate-900`}>
         <NavbarToggle />
         <NavbarCollapse className="lg:pl-80">{items}</NavbarCollapse>
         <NavbarBrand className="lg:pr-80">

@@ -4,6 +4,7 @@ import { Button } from "flowbite-react";
 import useFetch from "./hook/useFetch";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { FaTags } from "react-icons/fa";
 
 const Blogs = () => {
   const { data, error, loading } = useFetch();
@@ -32,10 +33,20 @@ const Blogs = () => {
                       key={idx}
                       className="w-full"
                       titleCard={blog.title}
-                      descriptionCard={`Kategori : ${blog.category.join(", ")}`}
+                      descriptionCard={
+                        <div className="flex flex-row items-center gap-1">
+                          <FaTags className="w-8" />
+                          <p className="lg:text-sm text-[12px]">
+                            {blog.category.join(", ")}
+                          </p>
+                        </div>
+                      }
                       additionaComponent={
                         <Button>
-                          <a href={blog.link} target="_blank" className="flex">
+                          <a
+                            href={blog.link}
+                            target="_blank"
+                            className="flex lg:text-sm text-xs font-semibold">
                             Baca selengkapnya di medium..
                             <svg
                               className="-mr-1 ml-2 h-4 w-4"

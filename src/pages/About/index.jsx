@@ -28,7 +28,7 @@ const About = () => {
               </p>
             </div>
             <h2 className="font-bold lg:text-3xl text-2xl">About</h2>
-            <p className="text-justify text-sm antialiased ">
+            <p className="text-justify text-sm antialiased leading-relaxed tracking-wide">
               Graduated from Institut Teknologi Telkom Purwokerto with a major
               in S1 Software Engineering in 2020-2024. Has completed the college
               time in 3.5 years with a GPA of 3.92. Have an internship
