@@ -14,7 +14,6 @@ import db from "../../config/firebase";
 
 const About = () => {
   const [visitor, setVisitor] = useState();
-
   useEffect(() => {
     const docRef = doc(db, "portofolio", "visitor");
     getDoc(docRef)
