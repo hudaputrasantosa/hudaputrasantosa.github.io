@@ -41,7 +41,14 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_REACT_API_KEY: ${{ vars.VITE_REACT_API_KEY }}
+          VITE_REACT_AUTH_DOMAIN: ${{ vars.VITE_REACT_AUTH_DOMAIN }}
+          VITE_REACT_PROJECT_ID: ${{ vars.VITE_REACT_PROJECT_ID }}
+          VITE_REACT_STORAGE_BUCKET: ${{ vars.VITE_REACT_STORAGE_BUCKET }}
+          VITE_REACT_MESSAGE_SENDER_ID: ${{ vars.VITE_REACT_MESSAGE_SENDER_ID }}
+          VITE_REACT_ID: ${{ vars.VITE_REACT_ID }}
+          VITE_REACT_MEASUREMENT_ID: ${{ vars.VITE_REACT_MEASUREMENT_ID }}
+          VITE_REACT_NOCODE_API_KEY: ${{ vars.VITE_REACT_NOCODE_API_KEY }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
