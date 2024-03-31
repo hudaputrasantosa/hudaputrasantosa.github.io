@@ -13,7 +13,7 @@ import { doc, getDoc, updateDoc } from "firebase/firestore";
 import db from "../../helpers/VisitorCounter";
 
 const About = () => {
-  const [visitor, setVisitor] = useState(0);
+  const [visitor, setVisitor] = useState();
 
   useEffect(() => {
     const docRef = doc(db, "portofolio", "visitor");
