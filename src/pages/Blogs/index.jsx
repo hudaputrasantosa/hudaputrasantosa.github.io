@@ -11,6 +11,7 @@ const Blogs = () => {
   if (error) {
     alert("terjadi kesalahan pada fetching data");
   }
+
   return (
     <>
       <ContentLayout>
