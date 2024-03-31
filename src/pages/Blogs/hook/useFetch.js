@@ -5,8 +5,7 @@ const useFetch = () => {
   const [data, setData] = useState();
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const baseUrl =
-    "https://v1.nocodeapi.com/hudaputrasantosa/medium/GtTjqSVdQmiXkhVC";
+  const baseUrl = import.meta.env.VITE_REACT_NOCODE_API_KEY;
 
   useEffect(() => {
     (async function () {

@@ -10,7 +10,7 @@ import {
 } from "../../response/about";
 import { useEffect, useState } from "react";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
-import db from "../../helpers/VisitorCounter";
+import db from "../../config/firebase";
 
 const About = () => {
   const [visitor, setVisitor] = useState();
@@ -25,7 +25,7 @@ const About = () => {
         });
       })
       .catch((err) => {
-        console.log("no", err);
+        alert("error increment counter : ", err);
       });
   }, []);
 
