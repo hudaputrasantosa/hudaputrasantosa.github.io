@@ -27,4 +27,5 @@ dist-ssr
 
 # Contentlayer
 .contentlayer
+.env
 

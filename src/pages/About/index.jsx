@@ -2,17 +2,42 @@ import ContentLayout from "../../components/ContentLayout";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
 import { HiBriefcase, HiAcademicCap, HiPuzzle } from "react-icons/hi";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import {
   educationExperience,
   trainingExperience,
   workExperience,
 } from "../../response/about";
+import { useEffect, useState } from "react";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
+import db from "../../helpers/VisitorCounter";
 
 const About = () => {
+  const [visitor, setVisitor] = useState(0);
+
+  useEffect(() => {
+    const docRef = doc(db, "portofolio", "visitor");
+    getDoc(docRef)
+      .then((item) => {
+        setVisitor(item.data().counter);
+        updateDoc(docRef, {
+          counter: item.data().counter + 1,
+        });
+      })
+      .catch((err) => {
+        console.log("no", err);
+      });
+  }, []);
+
   return (
     <>
       <ContentLayout>
         <div className="flex flex-col gap-3 ">
+          <div className="flex gap-1 lg:text-sm text-xs items-center justify-center border border-gray-200 rounded-lg p-2 lg:w-[104px] w-[90px]">
+            <FaMapMarkerAlt />
+            <p className="font-bold">{visitor}</p>
+            <p className="font-normal">Visitor</p>
+          </div>
           <section className="flex flex-col gap-4 py-4">
             <div className="flex flex-col items-center text-center gap-2 mb-4">
               <img
@@ -20,9 +45,16 @@ const About = () => {
                 className="rounded-full w-40 border-4 border-gray-100 "
                 loading="lazy"
               />
-              <h4 className="lg:text-3xl text-2xl font-bold">
-                Huda Putra Santosa
-              </h4>
+              <div className="flex items-center gap-2">
+                <h4 className="lg:text-3xl text-2xl font-bold">
+                  Huda Putra Santosa
+                </h4>
+                <img
+                  src="https://res.cloudinary.com/daxz4cuqx/image/upload/v1711888855/assets/icons/checklist_gwfcub.png"
+                  alt="verified"
+                  className="w-6 h-6"
+                />
+              </div>
               <p className="lg:text-sm text-xs font-medium">
                 Software Engineer | Fullstack Developer | Cloud Engineer
               </p>
