@@ -2,7 +2,7 @@ import ContentLayout from "../../components/ContentLayout";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
 import { HiBriefcase, HiAcademicCap, HiPuzzle } from "react-icons/hi";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import {
   educationExperience,
   trainingExperience,
@@ -32,10 +32,10 @@ const About = () => {
     <>
       <ContentLayout>
         <div className="flex flex-col gap-3 ">
-          <div className="flex gap-1 lg:text-sm text-xs items-center justify-center border border-gray-200 rounded-lg p-2 lg:w-[104px] w-[90px]">
-            <FaMapMarkerAlt />
+          <div className="flex gap-1 text-[13px] items-center justify-center border border-gray-200 rounded-lg p-2 w-[138px]">
+            <FaEye className="w-4 h-4" />
             <p className="font-bold">{visitor}</p>
-            <p className="font-normal">Visitor</p>
+            <p className="font-normal">Times Seen</p>
           </div>
           <section className="flex flex-col gap-4 py-4">
             <div className="flex flex-col items-center text-center gap-2 mb-4">

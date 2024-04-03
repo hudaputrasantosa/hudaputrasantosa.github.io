@@ -12,6 +12,7 @@ const webProjects = [
       `${baseUrl}/icons/react.svg`,
       `${baseUrl}/icons/tailwind.svg`,
       `${baseUrl}/icons/flowbite.svg`,
+      `${baseUrl}/icons/firebase.svg`,
       `${baseUrl}/icons/api.svg`,
     ],
     repo: "https://github.com/hudaputrasantosa/hudaputrasantosa.github.io",
