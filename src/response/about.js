@@ -6,6 +6,12 @@ const workExperience = [
     description: "",
   },
   {
+    institution: "Eventh!ngs",
+    position: "Backend Engineer",
+    date: "March 2024 - Now",
+    description: "",
+  },
+  {
     institution: "PT Talenta Sinergi Group",
     position: "Frontend Web Developer",
     date: "December 2023 - February 2024",
@@ -40,7 +46,7 @@ const trainingExperience = [
 ];
 const educationExperience = [
   {
-    institution: "Telkom University Nasional Purwokerto",
+    institution: "Institut Teknologi Telkom Purwokerto",
     position: "Software Engineering",
     date: "September 2020 - February 2024",
     description: "",

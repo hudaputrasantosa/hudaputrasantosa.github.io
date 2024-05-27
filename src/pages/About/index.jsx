@@ -55,7 +55,7 @@ const About = () => {
                 />
               </div>
               <p className="lg:text-sm text-xs font-medium">
-                Software Engineer | Fullstack Developer | Cloud Engineer
+                Backend Engineer | Software Engineer | Cloud Engineer
               </p>
             </div>
             <h2 className="font-bold lg:text-3xl text-2xl">About</h2>
