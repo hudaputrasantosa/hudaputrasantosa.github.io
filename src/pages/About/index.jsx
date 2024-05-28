@@ -1,3 +1,8 @@
+import { useEffect, useState } from "react";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
+import db from "../../config/firebase";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ContentLayout from "../../components/ContentLayout";
 import TimelineSection from "../../components/Timeline";
 import { Timeline } from "flowbite-react";
@@ -8,9 +13,6 @@ import {
   trainingExperience,
   workExperience,
 } from "../../response/about";
-import { useEffect, useState } from "react";
-import { doc, getDoc, updateDoc } from "firebase/firestore";
-import db from "../../config/firebase";
 
 const About = () => {
   const [visitor, setVisitor] = useState();
@@ -26,18 +28,19 @@ const About = () => {
       .catch((err) => {
         alert("error increment counter : ", err);
       });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
     <>
       <ContentLayout>
         <div className="flex flex-col gap-3 ">
-          <div className="flex gap-1 text-[13px] items-center justify-center border border-gray-200 rounded-lg p-2 w-[138px]">
+          <div data-aos="fade-up" className="flex gap-1 text-[13px] items-center justify-center border border-gray-200 rounded-lg p-2 w-[138px]">
             <FaEye className="w-4 h-4" />
             <p className="font-bold">{visitor}</p>
             <p className="font-normal">Times Seen</p>
           </div>
-          <section className="flex flex-col gap-4 py-4">
+          <section data-aos="fade-up" className="flex flex-col gap-4 py-4">
             <div className="flex flex-col items-center text-center gap-2 mb-4">
               <img
                 src="https://res.cloudinary.com/daxz4cuqx/image/upload/v1709810036/assets/images/profiles/huda-putra-santosa_bxzjrh.jpg"
@@ -76,7 +79,7 @@ const About = () => {
             </p>
           </section>
 
-          <section className="flex flex-col gap-4 pt-4 ">
+          <section data-aos="fade-up" className="flex flex-col gap-4 pt-4 ">
             <h2 className="font-bold lg:text-3xl text-2xl">Work Experience</h2>
             <div className="ml-3">
               <Timeline>
@@ -94,7 +97,7 @@ const About = () => {
             </div>
           </section>
 
-          <section className="flex flex-col gap-4 pt-4 ">
+          <section data-aos="fade-up" className="flex flex-col gap-4 pt-4 ">
             <h2 className="font-bold lg:text-3xl text-2xl">
               Training & Organization
             </h2>
@@ -114,7 +117,7 @@ const About = () => {
             </div>
           </section>
 
-          <section className="flex flex-col gap-4 pt-4">
+          <section data-aos="fade-up" className="flex flex-col gap-4 pt-4">
             <h2 className="font-bold lg:text-3xl text-2xl">Education</h2>
             <div className="ml-3">
               <Timeline>

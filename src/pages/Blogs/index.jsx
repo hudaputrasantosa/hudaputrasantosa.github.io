@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import CardComponent from "../../components/Card";
 import ContentLayout from "../../components/ContentLayout";
 import { Button } from "flowbite-react";
@@ -12,11 +15,15 @@ const Blogs = () => {
     alert("terjadi kesalahan pada fetching data");
   }
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <ContentLayout>
         <div className="flex flex-col gap-3">
-          <section className="flex flex-col gap-2 py-4">
+          <section data-aos="fade-up" className="flex flex-col gap-2 py-4">
             <h2 className="font-bold text-3xl">Blogs</h2>
           </section>
           <section className="flex flex-col w-full gap-3 text-base font-medium">

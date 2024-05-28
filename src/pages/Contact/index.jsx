@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import ContentLayout from "../../components/ContentLayout";
 import { MdOutlineMail } from "react-icons/md";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
@@ -31,10 +34,14 @@ const contacts = [
 ];
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <ContentLayout>
-        <section className="flex flex-col gap-2 py-4">
+        <section data-aos="fade-up" className="flex flex-col gap-2 py-4">
           <h2 className="font-bold text-3xl">Contact</h2>
           <div className="flex flex-col items-center justify-center text-center mt-4">
             <img
