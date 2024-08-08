@@ -2,6 +2,7 @@
     "name": "hudaputrasantosa.github.io",
     "private": true,
     "version": "0.0.0",
+    "description": "Portofolio Website v2 by Huda Putra Santosa",
     "type": "module",
     "scripts": {
         "dev": "vite",
