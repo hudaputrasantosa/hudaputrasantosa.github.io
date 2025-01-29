@@ -24,7 +24,7 @@ const About = () => {
         });
       })
       .catch((err) => {
-        alert("error increment counter : ", err);
+        alert("failed increment visitor counter : ", err);
       });
   }, []);
 
@@ -62,7 +62,7 @@ const About = () => {
             <p className="text-justify text-sm antialiased leading-relaxed tracking-wide">
               Graduated from Institut Teknologi Telkom Purwokerto with a major
               in S1 Software Engineering in 2020-2024. Has completed the college
-              time in 3.5 years with a GPA of 3.92. Have an internship
+              time in 3.5 years with a GPA of 3.93. Have an internship
               experience at PT Telkom Indonesia for 6 months with the Backend
               Developer position in charge of creating algorithms and providing
               REST API services and PT Sinergi Talenta Group for 3 months with
