@@ -1,7 +1,7 @@
 const baseUrlImages =
   "https://res.cloudinary.com/daxz4cuqx/image/upload/v1709809962/assets";
 const baseUrl =
-  "https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/src/assets";
+  "https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/public/assets";
 const webProjects = [
   {
     image: `${baseUrlImages}/images/projects/project-7_zscbbq.png`,
