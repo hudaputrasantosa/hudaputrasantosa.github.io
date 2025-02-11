@@ -11,7 +11,7 @@ const Projects = () => {
       <ContentLayout>
         <div className="flex flex-col gap-3">
           <section className="flex flex-col gap-2 py-4">
-            <h2 className="font-bold text-3xl">Projects</h2>
+            <h2 className="font-bold text-3xl">Portofolio</h2>
           </section>
           <TabLayout>
             <Tabs.Item active title="Web">

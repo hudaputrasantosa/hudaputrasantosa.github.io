@@ -14,7 +14,7 @@ function Nav() {
   const links = [
     { link: "/", label: "About" },
     { link: "/skills", label: "Skill" },
-    { link: "/projects", label: "Projects" },
+    { link: "/portofolio", label: "Portofolio" },
     { link: "/certification", label: "Certification" },
     { link: "/blogs", label: "Blogs" },
     { link: "/contact", label: "Contact" },
@@ -30,7 +30,8 @@ function Nav() {
         fluid
         className={`sticky ${
           scrollDirection == "down" ? "hidden" : "block"
-        } top-0 fixed z-10 w-full border-b shadow-none dark:bg-slate-900`}>
+        } top-0 fixed z-10 w-full border-b shadow-none dark:bg-slate-900`}
+      >
         <NavbarToggle />
         <NavbarCollapse className="lg:pl-80">{items}</NavbarCollapse>
         <NavbarBrand className="lg:pr-80">

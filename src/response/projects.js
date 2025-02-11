@@ -2,6 +2,8 @@ const baseUrlImages =
   "https://res.cloudinary.com/daxz4cuqx/image/upload/v1709809962/assets";
 const baseUrl =
   "https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/public/assets";
+const githubUrl = "https://github.com/hudaputrasantosa";
+
 const webProjects = [
   {
     image: `${baseUrlImages}/images/projects/project-7_zscbbq.png`,
@@ -15,7 +17,7 @@ const webProjects = [
       `${baseUrl}/icons/firebase.svg`,
       `${baseUrl}/icons/api.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/hudaputrasantosa.github.io",
+    repo: `${githubUrl}/hudaputrasantosa.github.io`,
     link: "https://hudaputrasantosa.github.io",
   },
   {
@@ -32,7 +34,7 @@ const webProjects = [
       `${baseUrl}/icons/tailwind.svg`,
       `${baseUrl}/icons/mysql.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/situkang-app",
+    repo: `${githubUrl}/situkang-app`,
     link: "",
   },
   {
@@ -45,7 +47,7 @@ const webProjects = [
       `${baseUrl}/icons/tailwind.svg`,
       `${baseUrl}/icons/api.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/caloriz-application",
+    repo: `${githubUrl}/caloriz-application`,
     link: "https://caloriz-application.vercel.app",
   },
   {
@@ -60,7 +62,7 @@ const webProjects = [
       `${baseUrl}/icons/mongodb.svg`,
       `${baseUrl}/icons/prisma.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/ngekos-app-client",
+    repo: `${githubUrl}/ngekos-app-client`,
     link: "",
   },
   {
@@ -75,12 +77,40 @@ const webProjects = [
       `${baseUrl}/icons/bootstrap.svg`,
       `${baseUrl}/icons/mysql.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/website-desawisata-karangtengah",
+    repo: `${githubUrl}/website-desawisata-karangtengah`,
     link: "",
   },
 ];
 
 const apiProjects = [
+  {
+    image: `${baseUrlImages}/images/projects/project-4.png`,
+    title: "Microservice App - User Account",
+    description:
+      "Backend Service untuk memberikan sebuah layanan API berupa Restful API atau gRPC pada service sistem pengelolaan user account seperti autentikasi dan manajemen data",
+    stacks: [
+      `${baseUrl}/icons/golang.svg`,
+      `${baseUrl}/icons/postgresql.svg`,
+      `https://res.cloudinary.com/daxz4cuqx/image/upload/v1711812293/assets/icons/gorm_j9gw6g.svg`,
+      `${baseUrl}/icons/redis.svg`,
+      `${baseUrl}/icons/docker.svg`,
+      `${baseUrl}/icons/swagger.svg`,
+    ],
+    repo: `${githubUrl}/auth-users-api`,
+  },
+  {
+    image: `${baseUrlImages}/images/projects/project-4.png`,
+    title: "Air Polution Integration API",
+    description:
+      "Backend Service untuk memberikan sebuah layanan API pada sistem informasi kualitas udara berdasarkan daerah",
+    stacks: [
+      `${baseUrl}/icons/express.svg`,
+      `${baseUrl}/icons/typescript.svg`,
+      `${baseUrl}/icons/axios.svg`,
+      `${baseUrl}/icons/redis.svg`,
+    ],
+    repo: `${githubUrl}/air-polution-cached`,
+  },
   {
     image: `${baseUrlImages}/images/projects/project-4.png`,
     title: "REST API Booking book",
@@ -93,7 +123,7 @@ const apiProjects = [
       `${baseUrl}/icons/jest.svg`,
       `${baseUrl}/icons/swagger.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/rest-api-book-test",
+    repo: `${githubUrl}/rest-api-book-test`,
   },
   {
     image: `${baseUrlImages}/images/projects/project-4.png`,
@@ -107,7 +137,7 @@ const apiProjects = [
       `${baseUrl}/icons/jest.svg`,
       `${baseUrl}/icons/swagger.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/marketplace-api",
+    repo: `${githubUrl}/marketplace-api`,
   },
   {
     image: `${baseUrlImages}/images/projects/project-4.png`,
@@ -120,7 +150,7 @@ const apiProjects = [
       `${baseUrl}/icons/prisma.svg`,
       `${baseUrl}/icons/postman.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/ngekos-api-dev",
+    repo: `${githubUrl}/ngekos-api-dev`,
   },
   {
     image: `${baseUrlImages}/images/projects/project-4.png`,
@@ -133,7 +163,7 @@ const apiProjects = [
       `${baseUrl}/icons/prisma.svg`,
       `${baseUrl}/icons/postman.svg`,
     ],
-    repo: "https://github.com/hudaputrasantosa/todolist-with-mevn",
+    repo: `${githubUrl}/todolist-with-mevn`,
   },
 ];
 
