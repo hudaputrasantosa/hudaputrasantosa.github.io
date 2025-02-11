@@ -32,7 +32,7 @@ const About = () => {
     <>
       <ContentLayout>
         <div className="flex flex-col gap-3 ">
-          <div className="flex gap-1 text-[13px] items-center justify-center border border-gray-200 rounded-full bg-gray-50 p-2 w-[148px]">
+          <div className="flex gap-1 text-[13px] items-center justify-center border border-gray-200 dark:border-none rounded-full bg-gray-50 dark:bg-cyan-700 p-2 w-[148px]">
             <FaEye className="w-4 h-4" />
             <p className="font-bold">{visitor}</p>
             <p className="font-normal">Times Seen</p>
