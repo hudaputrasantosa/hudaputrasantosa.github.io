@@ -6,10 +6,16 @@ import {
   NavbarToggle,
   DarkThemeToggle,
 } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ScrollDirection from "../../helpers/ScrollDirection";
 
 function Nav() {
+  const location = useLocation();
+  const getActiveStyle = (path) => {
+    return location.pathname === path
+      ? "text-cyan-600 dark:text-cyan-400 font-semibold"
+      : { color: "black" };
+  };
   const scrollDirection = ScrollDirection();
   const links = [
     { link: "/", label: "About" },
@@ -20,8 +26,10 @@ function Nav() {
     { link: "/contact", label: "Contact" },
   ];
   const items = links.map((link) => (
-    <NavbarLink key={link.label} className="cursor-pointer">
-      <Link to={link.link}>{link.label}</Link>
+    <NavbarLink key={link.label} className="cursor-pointer ">
+      <Link to={link.link} className={getActiveStyle(link.link)}>
+        {link.label}
+      </Link>
     </NavbarLink>
   ));
   return (
