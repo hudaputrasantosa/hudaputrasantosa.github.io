@@ -32,6 +32,7 @@ function Nav() {
       </Link>
     </NavbarLink>
   ));
+
   return (
     <div className="relative mb-16">
       <Navbar
@@ -41,7 +42,17 @@ function Nav() {
         } top-0 fixed z-10 w-full border-b shadow-none dark:bg-slate-900`}
       >
         <NavbarToggle />
-        <NavbarCollapse className="lg:pl-80">{items}</NavbarCollapse>
+        <NavbarCollapse className="pl-2 lg:pl-80">
+          <div className="flex flex-col lg:flex-row gap-x-6 items-start lg:items-center">
+            {items}
+            <a
+              href="https://service.hudaputrasantosa.my.id"
+              className="bg-cyan-600 px-2 py-1 rounded-md text-white font-medium hover:bg-cyan-700"
+            >
+              My Service
+            </a>
+          </div>
+        </NavbarCollapse>
         <NavbarBrand className="lg:pr-80">
           <DarkThemeToggle />
         </NavbarBrand>
