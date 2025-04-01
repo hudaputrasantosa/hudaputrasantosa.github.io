@@ -1,14 +1,20 @@
 const workExperience = [
   {
+    institution: "Nexmedis",
+    position: "Backend Engineer",
+    date: "April 2025 - Now",
+    description: "",
+  },
+  {
     institution: "VocaGame",
     position: "Backend Engineer",
-    date: "March 2024 - Now",
+    date: "March 2024 - March 2025",
     description: "",
   },
   {
     institution: "Eventhings",
     position: "Backend Engineer",
-    date: "March 2024 - Now",
+    date: "March 2024 - March 2025",
     description: "",
   },
   {

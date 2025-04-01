@@ -85,6 +85,19 @@ const webProjects = [
 const apiProjects = [
   {
     image: `${baseUrlImages}/images/projects/project-4.png`,
+    title: "Microservice App - Common Package",
+    description:
+      "Backend Service untuk memberikan sebuah layanan API berupa Restful API atau gRPC pada service sistem pengelolaan user account seperti autentikasi dan manajemen data",
+    stacks: [
+      `${baseUrl}/icons/golang.svg`,
+      `${baseUrl}/icons/redis.svg`,
+      `${baseUrl}/icons/docker.svg`,
+      `${baseUrl}/icons/swagger.svg`,
+    ],
+    repo: `${githubUrl}/common-package-microapp`,
+  },
+  {
+    image: `${baseUrlImages}/images/projects/project-4.png`,
     title: "Microservice App - User Account",
     description:
       "Backend Service untuk memberikan sebuah layanan API berupa Restful API atau gRPC pada service sistem pengelolaan user account seperti autentikasi dan manajemen data",
