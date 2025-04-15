@@ -87,6 +87,7 @@ const About = () => {
                   subTitleText={work.position}
                   dateText={work.date}
                   descriptionText={work.description}
+                  url={work.url_institution}
                 />
               ))}
             </Timeline>
@@ -107,6 +108,7 @@ const About = () => {
                   subTitleText={training.position}
                   dateText={training.date}
                   descriptionText={training.description}
+                  url={training.url_institution}
                 />
               ))}
             </Timeline>
@@ -125,6 +127,7 @@ const About = () => {
                   subTitleText={education.position}
                   dateText={education.date}
                   descriptionText={education.description}
+                  url={education.url_institution}
                 />
               ))}
             </Timeline>

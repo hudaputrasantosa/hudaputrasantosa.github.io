@@ -27,7 +27,7 @@ function Nav() {
   ];
   const items = links.map((link) => (
     <NavbarLink key={link.label} className="cursor-pointer ">
-      <Link to={link.link} className={getActiveStyle(link.link)}>
+      <Link to={link.link} className={getActiveStyle(link?.link)}>
         {link.label}
       </Link>
     </NavbarLink>
