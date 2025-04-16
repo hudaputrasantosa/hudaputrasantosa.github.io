@@ -3,15 +3,6 @@ import { HiExternalLink, HiChevronDown, HiChevronUp } from "react-icons/hi";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-TimelineSection.propTypes = {
-  iconTimeline: PropTypes.elementType.isRequired,
-  titleText: PropTypes.string.isRequired,
-  subTitleText: PropTypes.string.isRequired,
-  dateText: PropTypes.string.isRequired,
-  descriptionText: PropTypes.arrayOf(PropTypes.string).isRequired,
-  url: PropTypes.string.isRequired,
-};
-
 const TimelineSection = ({
   iconTimeline,
   titleText,
@@ -81,6 +72,15 @@ const TimelineSection = ({
       </Timeline.Item>
     </div>
   );
+};
+
+TimelineSection.propTypes = {
+  iconTimeline: PropTypes.elementType.isRequired,
+  titleText: PropTypes.string.isRequired,
+  subTitleText: PropTypes.string.isRequired,
+  dateText: PropTypes.string.isRequired,
+  descriptionText: PropTypes.arrayOf(PropTypes.string).isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default TimelineSection;
