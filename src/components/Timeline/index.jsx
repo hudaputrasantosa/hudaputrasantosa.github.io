@@ -38,34 +38,38 @@ const TimelineSection = ({
             <div className="mt-1">
               <button
                 onClick={toggleDescription}
-                className="flex items-center gap-1 text-sm font-medium text-cyan-600 hover:text-cyan-700 transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-cyan-600 hover:text-cyan-700 dark:text-cyan-500 dark:hover:text-cyan-300 transition-colors"
               >
                 {isDescriptionVisible ? (
                   <>
                     <span>Hide Description</span>
-                    <HiChevronUp className="w-4 h-4" />
+                    <HiChevronUp className="w-4 h-4 transition-transform duration-300" />
                   </>
                 ) : (
                   <>
                     <span>Show Description</span>
-                    <HiChevronDown className="w-4 h-4" />
+                    <HiChevronDown className="w-4 h-4 transition-transform duration-300" />
                   </>
                 )}
               </button>
-              {isDescriptionVisible && (
-                <Timeline.Body className="mt-2 text-sm">
-                  <h4 className="text-gray-500 font-semibold mb-2">
-                    Key Responsibilities :
-                  </h4>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  isDescriptionVisible
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <Timeline.Body className="mt-2 text-gray-500 dark:text-gray-300 text-sm">
+                  <h4 className="font-semibold mb-2">Key Responsibilities :</h4>
                   <ul className="list-disc pl-5 space-y-1">
                     {descriptionText.map((item, idx) => (
-                      <li key={idx} className="text-gray-500 text-justify">
+                      <li key={idx} className="text-justify">
                         {item}
                       </li>
                     ))}
                   </ul>
                 </Timeline.Body>
-              )}
+              </div>
             </div>
           )}
         </Timeline.Content>
