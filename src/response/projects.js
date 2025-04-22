@@ -159,9 +159,9 @@ const apiProjects = [
       "Backend Service untuk memberikan sebuah layanan API pada sistem penyewaan tempat kos di daerah indonesia",
     stacks: [
       `${baseUrl}/icons/express.svg`,
+      `${baseUrl}/icons/typescript.svg`,
       `${baseUrl}/icons/mongodb.svg`,
       `${baseUrl}/icons/prisma.svg`,
-      `${baseUrl}/icons/postman.svg`,
     ],
     repo: `${githubUrl}/ngekos-api-dev`,
   },
