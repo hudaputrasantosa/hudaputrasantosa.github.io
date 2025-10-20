@@ -19,7 +19,7 @@ const workExperience = [
       "Develop technical documentation related to features and APIs to facilitate the development and maintenance of the system",
       "Collaborate with the frontend team in API integration to ensure data communication between frontend and backend runs optimally.",
     ],
-    url_institution: "https://vocagame.com/about",
+    url_institution: "https://vocagame.com/id-id",
   },
   {
     institution: "Eventhings",
@@ -32,7 +32,7 @@ const workExperience = [
       "Integrated third-party payment gateway services to process digital transactions on the system and email service for user authentication notifications",
       "Collaborate as a team with mobile and frontend developers in API testing and integration",
     ],
-    url_institution: "https://eventhings.id/",
+    url_institution: "https://www.linkedin.com/company/eventhingsofficial/",
   },
   {
     institution: "PT Talenta Sinergi Group",
@@ -75,7 +75,14 @@ const workExperience = [
 const trainingExperience = [
   {
     institution: "Bangkit Academy By Google, GoTo & Traveloka",
-    position: "Cloud Computing Cohort",
+    position: "Incubation Phase Participants - Batch 2",
+    date: "February - September 2024",
+    description: "",
+    url_institution: "",
+  },
+  {
+    institution: "Bangkit Academy By Google, GoTo & Traveloka",
+    position: "Cloud Computing Cohort - Batch 1",
     date: "February - August 2023",
     description: "",
     url_institution: "",

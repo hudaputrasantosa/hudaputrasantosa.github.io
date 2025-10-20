@@ -15,12 +15,12 @@ const contacts = [
   },
   {
     icon: <FaGithub size="24" />,
-    name: "@hudaputrasantosa",
+    name: "hudaputrasantosa",
     link: "https://github.com/hudaputrasantosa",
   },
   {
     icon: <FaInstagram size="24" />,
-    name: "@hudaputrasantosa.dev",
+    name: "hudaputrasantosa.dev",
     link: "https://www.instagram.com/hudaputrasantosa.dev/",
   },
   {
